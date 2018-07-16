@@ -1,0 +1,691 @@
+[
+    {
+        "outputFile": "D:\\xampp\\htdocs\\sempoa.community\\discoin_builder\\data\\hepifarm\\platforms\\android\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-nl\\values-nl.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 105,
+                    "endColumn": 111,
+                    "endOffset": 212
+                },
+                "from": {
+                    "file": "D:\\xampp\\htdocs\\sempoa.community\\discoin_builder\\data\\apk\\hepifarm\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\12.0.1\\res\\values-nl\\values.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 0,
+                        "startOffset": 245,
+                        "endColumn": 107,
+                        "endOffset": 352
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 3,
+                    "startColumn": 4,
+                    "startOffset": 217,
+                    "endColumn": 186,
+                    "endOffset": 399
+                },
+                "from": {
+                    "file": "D:\\xampp\\htdocs\\sempoa.community\\discoin_builder\\data\\apk\\hepifarm\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\12.0.1\\res\\values-nl\\values.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 0,
+                        "startOffset": 353,
+                        "endColumn": 186,
+                        "endOffset": 539
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 4,
+                    "startColumn": 4,
+                    "startOffset": 404,
+                    "endColumn": 131,
+                    "endOffset": 531
+                },
+                "from": {
+                    "file": "D:\\xampp\\htdocs\\sempoa.community\\discoin_builder\\data\\apk\\hepifarm\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\12.0.1\\res\\values-nl\\values.xml",
+                    "position": {
+                        "startLine": 6,
+                        "startColumn": 0,
+                        "startOffset": 540,
+                        "endColumn": 127,
+                        "endOffset": 667
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 5,
+                    "startColumn": 4,
+                    "startOffset": 536,
+                    "endColumn": 112,
+                    "endOffset": 644
+                },
+                "from": {
+                    "file": "D:\\xampp\\htdocs\\sempoa.community\\discoin_builder\\data\\apk\\hepifarm\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\12.0.1\\res\\values-nl\\values.xml",
+                    "position": {
+                        "startLine": 7,
+                        "startColumn": 0,
+                        "startOffset": 668,
+                        "endColumn": 108,
+                        "endOffset": 776
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 6,
+                    "startColumn": 4,
+                    "startOffset": 649,
+                    "endColumn": 225,
+                    "endOffset": 870
+                },
+                "from": {
+                    "file": "D:\\xampp\\htdocs\\sempoa.community\\discoin_builder\\data\\apk\\hepifarm\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\12.0.1\\res\\values-nl\\values.xml",
+                    "position": {
+                        "startLine": 8,
+                        "startColumn": 0,
+                        "startOffset": 777,
+                        "endColumn": 225,
+                        "endOffset": 1002
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 7,
+                    "startColumn": 4,
+                    "startOffset": 875,
+                    "endColumn": 128,
+                    "endOffset": 999
+                },
+                "from": {
+                    "file": "D:\\xampp\\htdocs\\sempoa.community\\discoin_builder\\data\\apk\\hepifarm\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\12.0.1\\res\\values-nl\\values.xml",
+                    "position": {
+                        "startLine": 9,
+                        "startColumn": 0,
+                        "startOffset": 1003,
+                        "endColumn": 124,
+                        "endOffset": 1127
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 8,
+                    "startColumn": 4,
+                    "startOffset": 1004,
+                    "endColumn": 152,
+                    "endOffset": 1152
+                },
+                "from": {
+                    "file": "D:\\xampp\\htdocs\\sempoa.community\\discoin_builder\\data\\apk\\hepifarm\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\12.0.1\\res\\values-nl\\values.xml",
+                    "position": {
+                        "startLine": 10,
+                        "startColumn": 0,
+                        "startOffset": 1128,
+                        "endColumn": 148,
+                        "endOffset": 1276
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 9,
+                    "startColumn": 4,
+                    "startOffset": 1157,
+                    "endColumn": 134,
+                    "endOffset": 1287
+                },
+                "from": {
+                    "file": "D:\\xampp\\htdocs\\sempoa.community\\discoin_builder\\data\\apk\\hepifarm\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\12.0.1\\res\\values-nl\\values.xml",
+                    "position": {
+                        "startLine": 11,
+                        "startColumn": 0,
+                        "startOffset": 1277,
+                        "endColumn": 130,
+                        "endOffset": 1407
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 10,
+                    "startColumn": 4,
+                    "startOffset": 1292,
+                    "endColumn": 201,
+                    "endOffset": 1489
+                },
+                "from": {
+                    "file": "D:\\xampp\\htdocs\\sempoa.community\\discoin_builder\\data\\apk\\hepifarm\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-basement\\12.0.1\\res\\values-nl\\values.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 0,
+                        "startOffset": 247,
+                        "endColumn": 201,
+                        "endOffset": 448
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 11,
+                    "startColumn": 4,
+                    "startOffset": 1494,
+                    "endColumn": 236,
+                    "endOffset": 1726
+                },
+                "from": {
+                    "file": "D:\\xampp\\htdocs\\sempoa.community\\discoin_builder\\data\\apk\\hepifarm\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\12.0.1\\res\\values-nl\\values.xml",
+                    "position": {
+                        "startLine": 12,
+                        "startColumn": 0,
+                        "startOffset": 1408,
+                        "endColumn": 236,
+                        "endOffset": 1644
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 12,
+                    "startColumn": 4,
+                    "startOffset": 1731,
+                    "endColumn": 107,
+                    "endOffset": 1834
+                },
+                "from": {
+                    "file": "D:\\xampp\\htdocs\\sempoa.community\\discoin_builder\\data\\apk\\hepifarm\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\12.0.1\\res\\values-nl\\values.xml",
+                    "position": {
+                        "startLine": 13,
+                        "startColumn": 0,
+                        "startOffset": 1645,
+                        "endColumn": 103,
+                        "endOffset": 1748
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 13,
+                    "startColumn": 4,
+                    "startOffset": 1839,
+                    "endColumn": 199,
+                    "endOffset": 2034
+                },
+                "from": {
+                    "file": "D:\\xampp\\htdocs\\sempoa.community\\discoin_builder\\data\\apk\\hepifarm\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\12.0.1\\res\\values-nl\\values.xml",
+                    "position": {
+                        "startLine": 14,
+                        "startColumn": 0,
+                        "startOffset": 1749,
+                        "endColumn": 199,
+                        "endOffset": 1948
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 14,
+                    "startColumn": 4,
+                    "startOffset": 2039,
+                    "endColumn": 127,
+                    "endOffset": 2162
+                },
+                "from": {
+                    "file": "D:\\xampp\\htdocs\\sempoa.community\\discoin_builder\\data\\apk\\hepifarm\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\12.0.1\\res\\values-nl\\values.xml",
+                    "position": {
+                        "startLine": 15,
+                        "startColumn": 0,
+                        "startOffset": 1949,
+                        "endColumn": 123,
+                        "endOffset": 2072
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 15,
+                    "startColumn": 4,
+                    "startOffset": 2167,
+                    "endColumn": 221,
+                    "endOffset": 2384
+                },
+                "from": {
+                    "file": "D:\\xampp\\htdocs\\sempoa.community\\discoin_builder\\data\\apk\\hepifarm\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\12.0.1\\res\\values-nl\\values.xml",
+                    "position": {
+                        "startLine": 16,
+                        "startColumn": 0,
+                        "startOffset": 2073,
+                        "endColumn": 221,
+                        "endOffset": 2294
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 16,
+                    "startColumn": 4,
+                    "startOffset": 2389,
+                    "endColumn": 211,
+                    "endOffset": 2596
+                },
+                "from": {
+                    "file": "D:\\xampp\\htdocs\\sempoa.community\\discoin_builder\\data\\apk\\hepifarm\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\12.0.1\\res\\values-nl\\values.xml",
+                    "position": {
+                        "startLine": 17,
+                        "startColumn": 0,
+                        "startOffset": 2295,
+                        "endColumn": 207,
+                        "endOffset": 2502
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 17,
+                    "startColumn": 4,
+                    "startOffset": 2601,
+                    "endColumn": 97,
+                    "endOffset": 2694
+                },
+                "from": {
+                    "file": "D:\\xampp\\htdocs\\sempoa.community\\discoin_builder\\data\\apk\\hepifarm\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\12.0.1\\res\\values-nl\\values.xml",
+                    "position": {
+                        "startLine": 18,
+                        "startColumn": 0,
+                        "startOffset": 2503,
+                        "endColumn": 93,
+                        "endOffset": 2596
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 18,
+                    "startColumn": 4,
+                    "startOffset": 2699,
+                    "endColumn": 92,
+                    "endOffset": 2787
+                },
+                "from": {
+                    "file": "D:\\xampp\\htdocs\\sempoa.community\\discoin_builder\\data\\apk\\hepifarm\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\12.0.1\\res\\values-nl\\values.xml",
+                    "position": {
+                        "startLine": 19,
+                        "startColumn": 0,
+                        "startOffset": 2597,
+                        "endColumn": 88,
+                        "endOffset": 2685
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 19,
+                    "startColumn": 4,
+                    "startOffset": 2792,
+                    "endColumn": 107,
+                    "endOffset": 2895
+                },
+                "from": {
+                    "file": "D:\\xampp\\htdocs\\sempoa.community\\discoin_builder\\data\\apk\\hepifarm\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\12.0.1\\res\\values-nl\\values.xml",
+                    "position": {
+                        "startLine": 20,
+                        "startColumn": 0,
+                        "startOffset": 2686,
+                        "endColumn": 103,
+                        "endOffset": 2789
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 20,
+                    "startColumn": 4,
+                    "startOffset": 2900,
+                    "endColumn": 142,
+                    "endOffset": 3038
+                },
+                "from": {
+                    "file": "D:\\xampp\\htdocs\\sempoa.community\\discoin_builder\\data\\hepifarm\\platforms\\android\\res\\values-nl\\pgm_strings.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 2,
+                        "startOffset": 111,
+                        "endColumn": 140,
+                        "endOffset": 249
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 21,
+                    "startColumn": 4,
+                    "startOffset": 3043,
+                    "endColumn": 98,
+                    "endOffset": 3137
+                },
+                "from": {
+                    "file": "D:\\xampp\\htdocs\\sempoa.community\\discoin_builder\\data\\hepifarm\\platforms\\android\\res\\values-nl\\pgm_strings.xml",
+                    "position": {
+                        "startLine": 18,
+                        "startColumn": 2,
+                        "startOffset": 2306,
+                        "endColumn": 96,
+                        "endOffset": 2400
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 22,
+                    "startColumn": 4,
+                    "startOffset": 3142,
+                    "endColumn": 59,
+                    "endOffset": 3197
+                },
+                "from": {
+                    "file": "D:\\xampp\\htdocs\\sempoa.community\\discoin_builder\\data\\hepifarm\\platforms\\android\\res\\values-nl\\pgm_strings.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 2,
+                        "startOffset": 53,
+                        "endColumn": 57,
+                        "endOffset": 108
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 23,
+                    "startColumn": 4,
+                    "startOffset": 3202,
+                    "endColumn": 224,
+                    "endOffset": 3422
+                },
+                "from": {
+                    "file": "D:\\xampp\\htdocs\\sempoa.community\\discoin_builder\\data\\hepifarm\\platforms\\android\\res\\values-nl\\pgm_strings.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 2,
+                        "startOffset": 364,
+                        "endColumn": 222,
+                        "endOffset": 584
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 24,
+                    "startColumn": 4,
+                    "startOffset": 3427,
+                    "endColumn": 113,
+                    "endOffset": 3536
+                },
+                "from": {
+                    "file": "D:\\xampp\\htdocs\\sempoa.community\\discoin_builder\\data\\hepifarm\\platforms\\android\\res\\values-nl\\pgm_strings.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 2,
+                        "startOffset": 252,
+                        "endColumn": 111,
+                        "endOffset": 361
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 25,
+                    "startColumn": 4,
+                    "startOffset": 3541,
+                    "endColumn": 146,
+                    "endOffset": 3683
+                },
+                "from": {
+                    "file": "D:\\xampp\\htdocs\\sempoa.community\\discoin_builder\\data\\hepifarm\\platforms\\android\\res\\values-nl\\pgm_strings.xml",
+                    "position": {
+                        "startLine": 6,
+                        "startColumn": 2,
+                        "startOffset": 587,
+                        "endColumn": 144,
+                        "endOffset": 729
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 26,
+                    "startColumn": 4,
+                    "startOffset": 3688,
+                    "endColumn": 142,
+                    "endOffset": 3826
+                },
+                "from": {
+                    "file": "D:\\xampp\\htdocs\\sempoa.community\\discoin_builder\\data\\hepifarm\\platforms\\android\\res\\values-nl\\pgm_strings.xml",
+                    "position": {
+                        "startLine": 7,
+                        "startColumn": 2,
+                        "startOffset": 732,
+                        "endColumn": 140,
+                        "endOffset": 870
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 27,
+                    "startColumn": 4,
+                    "startOffset": 3831,
+                    "endColumn": 146,
+                    "endOffset": 3973
+                },
+                "from": {
+                    "file": "D:\\xampp\\htdocs\\sempoa.community\\discoin_builder\\data\\hepifarm\\platforms\\android\\res\\values-nl\\pgm_strings.xml",
+                    "position": {
+                        "startLine": 8,
+                        "startColumn": 2,
+                        "startOffset": 873,
+                        "endColumn": 144,
+                        "endOffset": 1015
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 28,
+                    "startColumn": 4,
+                    "startOffset": 3978,
+                    "endColumn": 119,
+                    "endOffset": 4093
+                },
+                "from": {
+                    "file": "D:\\xampp\\htdocs\\sempoa.community\\discoin_builder\\data\\hepifarm\\platforms\\android\\res\\values-nl\\pgm_strings.xml",
+                    "position": {
+                        "startLine": 9,
+                        "startColumn": 2,
+                        "startOffset": 1018,
+                        "endColumn": 117,
+                        "endOffset": 1133
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 29,
+                    "startColumn": 4,
+                    "startOffset": 4098,
+                    "endColumn": 167,
+                    "endOffset": 4261
+                },
+                "from": {
+                    "file": "D:\\xampp\\htdocs\\sempoa.community\\discoin_builder\\data\\hepifarm\\platforms\\android\\res\\values-nl\\pgm_strings.xml",
+                    "position": {
+                        "startLine": 10,
+                        "startColumn": 2,
+                        "startOffset": 1136,
+                        "endColumn": 165,
+                        "endOffset": 1299
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 30,
+                    "startColumn": 4,
+                    "startOffset": 4266,
+                    "endColumn": 181,
+                    "endOffset": 4443
+                },
+                "from": {
+                    "file": "D:\\xampp\\htdocs\\sempoa.community\\discoin_builder\\data\\hepifarm\\platforms\\android\\res\\values-nl\\pgm_strings.xml",
+                    "position": {
+                        "startLine": 11,
+                        "startColumn": 2,
+                        "startOffset": 1302,
+                        "endColumn": 179,
+                        "endOffset": 1479
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 31,
+                    "startColumn": 4,
+                    "startOffset": 4448,
+                    "endColumn": 140,
+                    "endOffset": 4584
+                },
+                "from": {
+                    "file": "D:\\xampp\\htdocs\\sempoa.community\\discoin_builder\\data\\hepifarm\\platforms\\android\\res\\values-nl\\pgm_strings.xml",
+                    "position": {
+                        "startLine": 12,
+                        "startColumn": 2,
+                        "startOffset": 1482,
+                        "endColumn": 138,
+                        "endOffset": 1618
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 32,
+                    "startColumn": 4,
+                    "startOffset": 4589,
+                    "endColumn": 183,
+                    "endOffset": 4768
+                },
+                "from": {
+                    "file": "D:\\xampp\\htdocs\\sempoa.community\\discoin_builder\\data\\hepifarm\\platforms\\android\\res\\values-nl\\pgm_strings.xml",
+                    "position": {
+                        "startLine": 13,
+                        "startColumn": 2,
+                        "startOffset": 1621,
+                        "endColumn": 181,
+                        "endOffset": 1800
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 33,
+                    "startColumn": 4,
+                    "startOffset": 4773,
+                    "endColumn": 176,
+                    "endOffset": 4945
+                },
+                "from": {
+                    "file": "D:\\xampp\\htdocs\\sempoa.community\\discoin_builder\\data\\hepifarm\\platforms\\android\\res\\values-nl\\pgm_strings.xml",
+                    "position": {
+                        "startLine": 14,
+                        "startColumn": 2,
+                        "startOffset": 1803,
+                        "endColumn": 174,
+                        "endOffset": 1975
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 34,
+                    "startColumn": 4,
+                    "startOffset": 4950,
+                    "endColumn": 105,
+                    "endOffset": 5051
+                },
+                "from": {
+                    "file": "D:\\xampp\\htdocs\\sempoa.community\\discoin_builder\\data\\hepifarm\\platforms\\android\\res\\values-nl\\pgm_strings.xml",
+                    "position": {
+                        "startLine": 17,
+                        "startColumn": 2,
+                        "startOffset": 2202,
+                        "endColumn": 103,
+                        "endOffset": 2303
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 35,
+                    "startColumn": 4,
+                    "startOffset": 5056,
+                    "endColumn": 136,
+                    "endOffset": 5188
+                },
+                "from": {
+                    "file": "D:\\xampp\\htdocs\\sempoa.community\\discoin_builder\\data\\hepifarm\\platforms\\android\\res\\values-nl\\pgm_strings.xml",
+                    "position": {
+                        "startLine": 15,
+                        "startColumn": 2,
+                        "startOffset": 1978,
+                        "endColumn": 134,
+                        "endOffset": 2110
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 36,
+                    "startColumn": 4,
+                    "startOffset": 5193,
+                    "endColumn": 90,
+                    "endOffset": 5279
+                },
+                "from": {
+                    "file": "D:\\xampp\\htdocs\\sempoa.community\\discoin_builder\\data\\hepifarm\\platforms\\android\\res\\values-nl\\pgm_strings.xml",
+                    "position": {
+                        "startLine": 16,
+                        "startColumn": 2,
+                        "startOffset": 2113,
+                        "endColumn": 88,
+                        "endOffset": 2199
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 37,
+                    "startColumn": 4,
+                    "startOffset": 5284,
+                    "endColumn": 100,
+                    "endOffset": 5380
+                },
+                "from": {
+                    "file": "D:\\xampp\\htdocs\\sempoa.community\\discoin_builder\\data\\apk\\hepifarm\\intermediates\\exploded-aar\\com.android.support\\support-compat\\26.1.0\\res\\values-nl\\values-nl.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 55,
+                        "endColumn": 100,
+                        "endOffset": 151
+                    }
+                }
+            }
+        ]
+    }
+]
