@@ -1,0 +1,17 @@
+#contentLeft{ font-size:12px;}
+#contentLeft ul{ margin:0;	 }
+#contentLeft ul li{ cursor:move; }
+#contentLeft ul li a{ color:#666; }
+#contentLeft .ui-sortable{ padding-left:0; }
+.page_list{
+	margin:9px; 
+	text-align:left;
+	padding:6px;
+	border:1px solid #E9E9E9;
+	border-radius:3px;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+}
+.page_list:hover{
+	background:#F7F7F7;	
+}

@@ -1,0 +1,11 @@
+
+#contentLeft {
+	float: left;
+	width: 100%;
+}
+
+#contentLeft li {
+	list-style: none;
+}
+
+

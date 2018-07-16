@@ -1,0 +1,24 @@
+@charset "utf-8";
+.dest_list{
+	border:1px solid #CCC;
+	padding:5px;
+	cursor:pointer;
+	background:#F4F4F4;
+	border-radius:2px;
+	-moz-border-radius:2px;
+	-webkit-border-radius:2px;
+}
+.dest_list:hover{
+	background:#EEE;	
+}
+.repler{
+	border:1px solid #CCC;
+	border-radius:3px;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	padding:4px;
+	margin:5px;
+	background:#F8F8F8;
+}
+/* CSS Document */
+

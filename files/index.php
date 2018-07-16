@@ -1,0 +1,1 @@
+<EMBED name="tutorial" src="<?php echo $_REQUEST['dirhost']; ?>/files/video_tutorial.mp4" height="720" width="1280" ></EMBED>

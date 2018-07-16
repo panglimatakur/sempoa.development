@@ -1,0 +1,16 @@
+@charset "utf-8";
+/* CSS Document */
+.filetree li{ position:relative; padding:10px;}
+.link-name{ font-size:11px; }
+.link-btn{ width:100px; text-align:center;}
+
+.parent_link{
+	border:1px solid #D4D4D4;
+	border-radius:0.6em;
+	-moz-border-radius:0.2em;
+	-webkit-border-radius:0.2em;
+	background:#E8E8E8;
+	padding:4px;
+	width:100%;
+	font-size:12px;
+}

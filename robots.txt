@@ -1,0 +1,6 @@
+User-agent: *
+Dissallow: /files/
+Dissallow: /includes/
+Dissallow: /libraries/
+Dissallow: /modules/
+Dissallow: /products/

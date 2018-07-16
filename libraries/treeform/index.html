@@ -1,0 +1,1242 @@
+    <style type="text/css">
+		.tree {
+		  margin: 2% auto;
+		  width: 80%;
+		}
+		
+		.tree ul {
+		  display: none;
+		  margin: 4px auto;
+		  margin-left: 6px;
+		  border-left: 1px dashed #dfdfdf;
+		}
+		
+		
+		.tree li {
+		  padding: 12px 18px;
+		  cursor: pointer;
+		  vertical-align: middle;
+		  background: #fff;
+		}
+		
+		.tree li:first-child {
+		  border-radius: 3px 3px 0 0;
+		}
+		
+		.tree li:last-child {
+		  border-radius: 0 0 3px 3px;
+		}
+		
+		.tree .active,
+		.active li {
+		  background: #efefef;
+		}
+		
+		.tree label {
+		  cursor: pointer;
+		}
+		
+		.tree input[type=checkbox] {
+		  margin: -2px 6px 0 0px;
+		}
+		
+		.has > label {
+		  color: #000;
+		}
+		
+		.tree .total {
+		  color: #e13300;
+		}	
+</style>
+<h1>Jquery Tree Menu</h1>
+
+<div class="controls">
+  <button>Collepsed</button>
+  <button>Expanded</button>
+  <button>Checked All</button>
+  <button>Unchek All</button>
+</div>
+<ul class="tree">
+  <li class="has">
+    <input type="checkbox" name="domain[]" value="Agricultural Sciences">
+    <label>Agricultural Sciences <span class="total">(15)</span></label>
+    <ul>
+      <li class="">
+        <input type="checkbox" name="subdomain[]" value="Agriculture, Dairy &amp; Animal Science">
+        <label>Agriculture, Dairy &amp; Animal Science </label>
+      </li>
+      <li class="">
+        <input type="checkbox" name="subdomain[]" value="Agricultural Engineering">
+        <label>Agricultural Engineering </label>
+      </li>
+      <li class="">
+        <input type="checkbox" name="subdomain[]" value="Agricultural Economics &amp; Policy">
+        <label>Agricultural Economics &amp; Policy </label>
+      </li>
+      <li class="">
+        <input type="checkbox" name="subdomain[]" value="Agriculture, Multidisciplinary">
+        <label>Agriculture, Multidisciplinary </label>
+      </li>
+      <li class="">
+        <input type="checkbox" name="subdomain[]" value="Agronomy">
+        <label>Agronomy </label>
+      </li>
+      <li class="">
+        <input type="checkbox" name="subdomain[]" value="Plant Sciences,Botany">
+        <label>Plant Sciences,Botany </label>
+      </li>
+      <li class="">
+        <input type="checkbox" name="subdomain[]" value="Environmental Sciences">
+        <label>Environmental Sciences </label>
+      </li>
+      <li class="">
+        <input type="checkbox" name="subdomain[]" value="Fisheries">
+        <label>Fisheries </label>
+      </li>
+      <li class="">
+        <input type="checkbox" name="subdomain[]" value="Food Science &amp; Technology">
+        <label>Food Science &amp; Technology </label>
+      </li>
+      <li class="">
+        <input type="checkbox" name="subdomain[]" value="Forestry">
+        <label>Forestry </label>
+      </li>
+      <li class="">
+        <input type="checkbox" name="subdomain[]" value="Horticulture">
+        <label>Horticulture </label>
+      </li>
+      <li class="">
+        <input type="checkbox" name="subdomain[]" value="Soil Science">
+        <label>Soil Science </label>
+      </li>
+      <li class="">
+        <input type="checkbox" name="subdomain[]" value="Veterinary Sciences">
+        <label>Veterinary Sciences </label>
+      </li>
+      <li class="">
+        <input type="checkbox" name="subdomain[]" value="Water Resources">
+        <label>Water Resources </label>
+      </li>
+      <li class="">
+        <input type="checkbox" name="subdomain[]" value="Biodiversity Conservation">
+        <label>Biodiversity Conservation </label>
+      </li>
+    </ul>
+  </li>
+  <li class="has">
+    <input type="checkbox" name="domain[]" value="Biological Sciences">
+    <label>Biological Sciences <span class="total">(19)</span></label>
+    <ul>
+      <li class="">
+        <input type="checkbox" name="subdomain[]" value="Biology">
+        <label>Biology </label>
+      </li>
+      <li class="">
+        <input type="checkbox" name="subdomain[]" value="Cell &amp; Tissue Engineering">
+        <label>Cell &amp; Tissue Engineering </label>
+      </li>
+      <li class="">
+        <input type="checkbox" name="subdomain[]" value="Biophysics">
+        <label>Biophysics </label>
+      </li>
+      <li class="">
+        <input type="checkbox" name="subdomain[]" value="Biotechnology">
+        <label>Biotechnology </label>
+      </li>
+      <li class="">
+        <input type="checkbox" name="subdomain[]" value="Cell Biology">
+        <label>Cell Biology </label>
+      </li>
+      <li class="">
+        <input type="checkbox" name="subdomain[]" value="Biochemical Research Methods">
+        <label>Biochemical Research Methods </label>
+      </li>
+      <li class="has">
+        <input type="checkbox" name="subdomain[]" value="Biochemistry &amp; Molecular Biology">
+        <label>Biochemistry &amp; Molecular Biology <span class="total">(1)</span></label>
+        <ul>
+          <li>
+            <input type="checkbox" name="subject[]" value="Analytical Biochemistry">
+            <label>Analytical Biochemistry</label>
+          </li>
+        </ul>
+      </li>
+      <li class="">
+        <input type="checkbox" name="subdomain[]" value="Mathematical &amp; Computational Biology">
+        <label>Mathematical &amp; Computational Biology </label>
+      </li>
+      <li class="has">
+        <input type="checkbox" name="subdomain[]" value="Microbiology">
+        <label>Microbiology <span class="total">(2)</span></label>
+        <ul>
+          <li>
+            <input type="checkbox" name="subject[]" value="Pharmaceutical Microbiology">
+            <label>Pharmaceutical Microbiology</label>
+          </li>
+          <li>
+            <input type="checkbox" name="subject[]" value="Fermentation Technology">
+            <label>Fermentation Technology</label>
+          </li>
+        </ul>
+      </li>
+      <li class="">
+        <input type="checkbox" name="subdomain[]" value="Ecology">
+        <label>Ecology </label>
+      </li>
+      <li class="">
+        <input type="checkbox" name="subdomain[]" value="Evolutionary Biology">
+        <label>Evolutionary Biology </label>
+      </li>
+      <li class="">
+        <input type="checkbox" name="subdomain[]" value="Developmental Biology">
+        <label>Developmental Biology </label>
+      </li>
+      <li class="">
+        <input type="checkbox" name="subdomain[]" value="Entomology">
+        <label>Entomology </label>
+      </li>
+      <li class="">
+        <input type="checkbox" name="subdomain[]" value="Limnology">
+        <label>Limnology </label>
+      </li>
+      <li class="">
+        <input type="checkbox" name="subdomain[]" value="Marine &amp; Freshwater Biology">
+        <label>Marine &amp; Freshwater Biology </label>
+      </li>
+      <li class="">
+        <input type="checkbox" name="subdomain[]" value="Mycology">
+        <label>Mycology </label>
+      </li>
+      <li class="">
+        <input type="checkbox" name="subdomain[]" value="Ornithology">
+        <label>Ornithology </label>
+      </li>
+      <li class="">
+        <input type="checkbox" name="subdomain[]" value="Reproductive Biology">
+        <label>Reproductive Biology </label>
+      </li>
+      <li class="has">
+        <input type="checkbox" name="subdomain[]" value="Zoology">
+        <label>Zoology <span class="total">(1)</span></label>
+        <ul>
+          <li>
+            <input type="checkbox" name="subject[]" value="Zoology">
+            <label>Zoology</label>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li class="has">
+    <input type="checkbox" name="domain[]" value="Social Sciences">
+    <label>Social Sciences <span class="total">(55)</span></label>
+    <ul>
+      <li class="">
+        <input type="checkbox" name="subdomain[]" value="Anthropology">
+        <label>Anthropology </label>
+      </li>
+      <li class="">
+        <input type="checkbox" name="subdomain[]" value="Area Studies">
+        <label>Area Studies </label>
+      </li>
+      <li class="">
+        <input type="checkbox" name="subdomain[]" value="Business">
+        <label>Business </label>
+      </li>
+      <li class="">
+        <input type="checkbox" name="subdomain[]" value="Business, Finance">
+        <label>Business, Finance </label>
+      </li>
+      <li class="has">
+        <input type="checkbox" name="subdomain[]" value="Management">
+        <label>Management <span class="total">(2)</span></label>
+        <ul>
+          <li>
+            <input type="checkbox" name="subject[]" value="Management Accounting">
+            <label>Management Accounting</label>
+          </li>
+          <li>
+            <input type="checkbox" name="subject[]" value="Marketing Management">
+            <label>Marketing Management</label>
+          </li>
+        </ul>
+      </li>
+      <li class="">
+        <input type="checkbox" name="subdomain[]" value="Cultural Studies">
+        <label>Cultural Studies </label>
+      </li>
+      <li class="">
+        <input type="checkbox" name="subdomain[]" value="Communication">
+        <label>Communication </label>
+      </li>
+      <li class="">
+        <input type="checkbox" name="subdomain[]" value="Criminology &amp; Penology">
+        <label>Criminology &amp; Penology </label>
+      </li>
+      <li class="">
+        <input type="checkbox" name="subdomain[]" value="Demography">
+        <label>Demography </label>
+      </li>
+      <li class="has">
+        <input type="checkbox" name="subdomain[]" value="Economics">
+        <label>Economics <span class="total">(1)</span></label>
+        <ul>
+          <li>
+            <input type="checkbox" name="subject[]" value="Economics">
+            <label>Economics</label>
+          </li>
+        </ul>
+      </li>
+      <li class="">
+        <input type="checkbox" name="subdomain[]" value="Education &amp; Educational Research">
+        <label>Education &amp; Educational Research </label>
+      </li>
+      <li class="has">
+        <input type="checkbox" name="subdomain[]" value="Education, Special">
+        <label>Education, Special <span class="total">(1)</span></label>
+        <ul>
+          <li>
+            <input type="checkbox" name="subject[]" value="Adult Education">
+            <label>Adult Education</label>
+          </li>
+        </ul>
+      </li>
+      <li class="">
+        <input type="checkbox" name="subdomain[]" value="Ergonomics">
+        <label>Ergonomics </label>
+      </li>
+      <li class="">
+        <input type="checkbox" name="subdomain[]" value="Ethics">
+        <label>Ethics </label>
+      </li>
+      <li class="">
+        <input type="checkbox" name="subdomain[]" value="Ethnic Studies">
+        <label>Ethnic Studies </label>
+      </li>
+      <li class="">
+        <input type="checkbox" name="subdomain[]" value="Family Studies">
+        <label>Family Studies </label>
+      </li>
+      <li class="">
+        <input type="checkbox" name="subdomain[]" value="Geography">
+        <label>Geography </label>
+      </li>
+      <li class="">
+        <input type="checkbox" name="subdomain[]" value="Geography, Physical">
+        <label>Geography, Physical </label>
+      </li>
+      <li class="">
+        <input type="checkbox" name="subdomain[]" value="Gerontology">
+        <label>Gerontology </label>
+      </li>
+      <li class="">
+        <input type="checkbox" name="subdomain[]" value="History">
+        <label>History </label>
+      </li>
+      <li class="">
+        <input type="checkbox" name="subdomain[]" value="History &amp; Philosophy of Science">
+        <label>History &amp; Philosophy of Science </label>
+      </li>
+      <li class="">
+        <input type="checkbox" name="subdomain[]" value="History of Social Sciences">
+        <label>History of Social Sciences </label>
+      </li>
+      <li class="">
+        <input type="checkbox" name="subdomain[]" value="Hospitality, Leisure, Sport &amp; Tourism">
+        <label>Hospitality, Leisure, Sport &amp; Tourism </label>
+      </li>
+      <li class="">
+        <input type="checkbox" name="subdomain[]" value="Industrial Relations &amp;Labour">
+        <label>Industrial Relations &amp;Labour </label>
+      </li>
+      <li class="">
+        <input type="checkbox" name="subdomain[]" value="Information Science &amp; Library Science">
+        <label>Information Science &amp; Library Science </label>
+      </li>
+      <li class="">
+        <input type="checkbox" name="subdomain[]" value="International Relations">
+        <label>International Relations </label>
+      </li>
+      <li class="">
+        <input type="checkbox" name="subdomain[]" value="Law">
+        <label>Law </label>
+      </li>
+      <li class="">
+        <input type="checkbox" name="subdomain[]" value="Linguistics">
+        <label>Linguistics </label>
+      </li>
+      <li class="">
+        <input type="checkbox" name="subdomain[]" value="Planning &amp; Development">
+        <label>Planning &amp; Development </label>
+      </li>
+      <li class="">
+        <input type="checkbox" name="subdomain[]" value="Political Science">
+        <label>Political Science </label>
+      </li>
+      <li class="">
+        <input type="checkbox" name="subdomain[]" value="Psychiatry">
+        <label>Psychiatry </label>
+      </li>
+      <li class="">
+        <input type="checkbox" name="subdomain[]" value="Psychology">
+        <label>Psychology </label>
+      </li>
+      <li class="">
+        <input type="checkbox" name="subdomain[]" value="Psychology, Applied">
+        <label>Psychology, Applied </label>
+      </li>
+      <li class="">
+        <input type="checkbox" name="subdomain[]" value="Psychology, Biological">
+        <label>Psychology, Biological </label>
+      </li>
+      <li class="">
+        <input type="checkbox" name="subdomain[]" value="Psychology, Clinical">
+        <label>Psychology, Clinical </label>
+      </li>
+      <li class="">
+        <input type="checkbox" name="subdomain[]" value="Psychology, Developmental">
+        <label>Psychology, Developmental </label>
+      </li>
+      <li class="">
+        <input type="checkbox" name="subdomain[]" value="Psychology, Educational">
+        <label>Psychology, Educational </label>
+      </li>
+      <li class="">
+        <input type="checkbox" name="subdomain[]" value="Psychology, Experimental">
+        <label>Psychology, Experimental </label>
+      </li>
+      <li class="">
+        <input type="checkbox" name="subdomain[]" value="Psychology, Mathematical">
+        <label>Psychology, Mathematical </label>
+      </li>
+      <li class="">
+        <input type="checkbox" name="subdomain[]" value="Psychology, Multidisciplinary">
+        <label>Psychology, Multidisciplinary </label>
+      </li>
+      <li class="">
+        <input type="checkbox" name="subdomain[]" value="Psychology, Psychoanalysis">
+        <label>Psychology, Psychoanalysis </label>
+      </li>
+      <li class="">
+        <input type="checkbox" name="subdomain[]" value="Psychology, Social">
+        <label>Psychology, Social </label>
+      </li>
+      <li class="">
+        <input type="checkbox" name="subdomain[]" value="Public Administration">
+        <label>Public Administration </label>
+      </li>
+      <li class="">
+        <input type="checkbox" name="subdomain[]" value="Public, Environmental &amp; Occupational Health">
+        <label>Public, Environmental &amp; Occupational Health </label>
+      </li>
+      <li class="">
+        <input type="checkbox" name="subdomain[]" value="Rehabilitation">
+        <label>Rehabilitation </label>
+      </li>
+      <li class="">
+        <input type="checkbox" name="subdomain[]" value="Social Issues">
+        <label>Social Issues </label>
+      </li>
+      <li class="">
+        <input type="checkbox" name="subdomain[]" value="Social Sciences, Biomedical">
+        <label>Social Sciences, Biomedical </label>
+      </li>
+      <li class="">
+        <input type="checkbox" name="subdomain[]" value="Social Sciences, Interdisciplinary">
+        <label>Social Sciences, Interdisciplinary </label>
+      </li>
+      <li class="">
+        <input type="checkbox" name="subdomain[]" value="Social Sciences, Mathematical Methods">
+        <label>Social Sciences, Mathematical Methods </label>
+      </li>
+      <li class="">
+        <input type="checkbox" name="subdomain[]" value="Social Work">
+        <label>Social Work </label>
+      </li>
+      <li class="">
+        <input type="checkbox" name="subdomain[]" value="Sociology">
+        <label>Sociology </label>
+      </li>
+      <li class="">
+        <input type="checkbox" name="subdomain[]" value="Substance Abuse">
+        <label>Substance Abuse </label>
+      </li>
+      <li class="">
+        <input type="checkbox" name="subdomain[]" value="Transportation">
+        <label>Transportation </label>
+      </li>
+      <li class="">
+        <input type="checkbox" name="subdomain[]" value="Urban/Rural Studies">
+        <label>Urban/Rural Studies </label>
+      </li>
+      <li class="">
+        <input type="checkbox" name="subdomain[]" value="Women's Studies">
+        <label>Women's Studies </label>
+      </li>
+    </ul>
+  </li>
+  <li class="has">
+    <input type="checkbox" name="domain[]" value="Chemical Sciences">
+    <label>Chemical Sciences <span class="total">(11)</span></label>
+    <ul>
+      <li class="">
+        <input type="checkbox" name="subdomain[]" value="Chemistry, Applied">
+        <label>Chemistry, Applied </label>
+      </li>
+      <li class="">
+        <input type="checkbox" name="subdomain[]" value="Chemistry, Multidisciplinary">
+        <label>Chemistry, Multidisciplinary </label>
+      </li>
+      <li class="">
+        <input type="checkbox" name="subdomain[]" value="Chemistry, Analytical">
+        <label>Chemistry, Analytical </label>
+      </li>
+      <li class="">
+        <input type="checkbox" name="subdomain[]" value="Chemistry, Inorganic &amp; Nuclear">
+        <label>Chemistry, Inorganic &amp; Nuclear </label>
+      </li>
+      <li class="">
+        <input type="checkbox" name="subdomain[]" value="Chemistry, Organic">
+        <label>Chemistry, Organic </label>
+      </li>
+      <li class="">
+        <input type="checkbox" name="subdomain[]" value="Chemistry, Physical">
+        <label>Chemistry, Physical </label>
+      </li>
+      <li class="">
+        <input type="checkbox" name="subdomain[]" value="Chemistry,Multidisciplinary">
+        <label>Chemistry,Multidisciplinary </label>
+      </li>
+      <li class="">
+        <input type="checkbox" name="subdomain[]" value="Crystallography">
+        <label>Crystallography </label>
+      </li>
+      <li class="">
+        <input type="checkbox" name="subdomain[]" value="Electrochemistry">
+        <label>Electrochemistry </label>
+      </li>
+      <li class="">
+        <input type="checkbox" name="subdomain[]" value="Polymer Science">
+        <label>Polymer Science </label>
+      </li>
+      <li class="">
+        <input type="checkbox" name="subdomain[]" value="Spectroscopy">
+        <label>Spectroscopy </label>
+      </li>
+    </ul>
+  </li>
+  <li class="has">
+    <input type="checkbox" name="domain[]" value="Physical Sciences">
+    <label>Physical Sciences <span class="total">(24)</span></label>
+    <ul>
+      <li class="">
+        <input type="checkbox" name="subdomain[]" value="Geochemistry &amp; Geophysics">
+        <label>Geochemistry &amp; Geophysics </label>
+      </li>
+      <li class="">
+        <input type="checkbox" name="subdomain[]" value="Geology">
+        <label>Geology </label>
+      </li>
+      <li class="">
+        <input type="checkbox" name="subdomain[]" value="Geosciences, Multidisciplinary">
+        <label>Geosciences, Multidisciplinary </label>
+      </li>
+      <li class="">
+        <input type="checkbox" name="subdomain[]" value="Meteorology &amp; Atmospheric Sciences">
+        <label>Meteorology &amp; Atmospheric Sciences </label>
+      </li>
+      <li class="">
+        <input type="checkbox" name="subdomain[]" value="Mineralogy">
+        <label>Mineralogy </label>
+      </li>
+      <li class="">
+        <input type="checkbox" name="subdomain[]" value="Oceanography">
+        <label>Oceanography </label>
+      </li>
+      <li class="">
+        <input type="checkbox" name="subdomain[]" value="Paleontology">
+        <label>Paleontology </label>
+      </li>
+      <li class="">
+        <input type="checkbox" name="subdomain[]" value="Acoustics">
+        <label>Acoustics </label>
+      </li>
+      <li class="">
+        <input type="checkbox" name="subdomain[]" value="Astronomy &amp; Astrophysics">
+        <label>Astronomy &amp; Astrophysics </label>
+      </li>
+      <li class="">
+        <input type="checkbox" name="subdomain[]" value="Thermodynamics">
+        <label>Thermodynamics </label>
+      </li>
+      <li class="">
+        <input type="checkbox" name="subdomain[]" value="Mathematics, Applied">
+        <label>Mathematics, Applied </label>
+      </li>
+      <li class="">
+        <input type="checkbox" name="subdomain[]" value="Mathematics, Interdisciplinary Applications">
+        <label>Mathematics, Interdisciplinary Applications </label>
+      </li>
+      <li class="">
+        <input type="checkbox" name="subdomain[]" value="Mathematics">
+        <label>Mathematics </label>
+      </li>
+      <li class="">
+        <input type="checkbox" name="subdomain[]" value="Nuclear Science &amp; Technology">
+        <label>Nuclear Science &amp; Technology </label>
+      </li>
+      <li class="">
+        <input type="checkbox" name="subdomain[]" value="Optics">
+        <label>Optics </label>
+      </li>
+      <li class="">
+        <input type="checkbox" name="subdomain[]" value="Physics, Applied">
+        <label>Physics, Applied </label>
+      </li>
+      <li class="">
+        <input type="checkbox" name="subdomain[]" value="Physics, Fluids &amp; Plasmas">
+        <label>Physics, Fluids &amp; Plasmas </label>
+      </li>
+      <li class="">
+        <input type="checkbox" name="subdomain[]" value="Physics, Atomic, Molecular &amp; Chemical">
+        <label>Physics, Atomic, Molecular &amp; Chemical </label>
+      </li>
+      <li class="">
+        <input type="checkbox" name="subdomain[]" value="Physics, Multidisciplinary">
+        <label>Physics, Multidisciplinary </label>
+      </li>
+      <li class="">
+        <input type="checkbox" name="subdomain[]" value="Physics, Condensed Matter">
+        <label>Physics, Condensed Matter </label>
+      </li>
+      <li class="">
+        <input type="checkbox" name="subdomain[]" value="Physics, Nuclear">
+        <label>Physics, Nuclear </label>
+      </li>
+      <li class="">
+        <input type="checkbox" name="subdomain[]" value="Physics, Particles &amp; Fields">
+        <label>Physics, Particles &amp; Fields </label>
+      </li>
+      <li class="">
+        <input type="checkbox" name="subdomain[]" value="Physics, Mathematical">
+        <label>Physics, Mathematical </label>
+      </li>
+      <li class="">
+        <input type="checkbox" name="subdomain[]" value="Statistics &amp; Probability">
+        <label>Statistics &amp; Probability </label>
+      </li>
+    </ul>
+  </li>
+  <li class="has">
+    <input type="checkbox" name="domain[]" value="Engineering and Technology">
+    <label>Engineering and Technology <span class="total">(46)</span></label>
+    <ul>
+      <li class="">
+        <input type="checkbox" name="subdomain[]" value="Automation &amp; Control Systems">
+        <label>Automation &amp; Control Systems </label>
+      </li>
+      <li class="">
+        <input type="checkbox" name="subdomain[]" value="Computer Science, Artificial Intelligence">
+        <label>Computer Science, Artificial Intelligence </label>
+      </li>
+      <li class="">
+        <input type="checkbox" name="subdomain[]" value="Computer Science, Cybernetics">
+        <label>Computer Science, Cybernetics </label>
+      </li>
+      <li class="has">
+        <input type="checkbox" name="subdomain[]" value="Computer Science, Hardware &amp; Architecture">
+        <label>Computer Science, Hardware &amp; Architecture <span class="total">(1)</span></label>
+        <ul>
+          <li>
+            <input type="checkbox" name="subject[]" value="High Performance Computing">
+            <label>High Performance Computing</label>
+          </li>
+        </ul>
+      </li>
+      <li class="has">
+        <input type="checkbox" name="subdomain[]" value="Computer Science, Information Systems">
+        <label>Computer Science, Information Systems <span class="total">(1)</span></label>
+        <ul>
+          <li>
+            <input type="checkbox" name="subject[]" value="Quantum and Nano Computing">
+            <label>Quantum and Nano Computing</label>
+          </li>
+        </ul>
+      </li>
+      <li class="">
+        <input type="checkbox" name="subdomain[]" value="Computer Science, Interdisciplinary SCI">
+        <label>Computer Science, Interdisciplinary SCI </label>
+      </li>
+      <li class="">
+        <input type="checkbox" name="subdomain[]" value="Computer Science, Software Engineering">
+        <label>Computer Science, Software Engineering </label>
+      </li>
+      <li class="">
+        <input type="checkbox" name="subdomain[]" value="Computer Science, Theory &amp; Methods">
+        <label>Computer Science, Theory &amp; Methods </label>
+      </li>
+      <li class="">
+        <input type="checkbox" name="subdomain[]" value="Construction &amp; Building Technology">
+        <label>Construction &amp; Building Technology </label>
+      </li>
+      <li class="">
+        <input type="checkbox" name="subdomain[]" value="Energy &amp; Fuels">
+        <label>Energy &amp; Fuels </label>
+      </li>
+      <li class="">
+        <input type="checkbox" name="subdomain[]" value="Engineering, Aerospace">
+        <label>Engineering, Aerospace </label>
+      </li>
+      <li class="">
+        <input type="checkbox" name="subdomain[]" value="Engineering, Biomedical">
+        <label>Engineering, Biomedical </label>
+      </li>
+      <li class="has">
+        <input type="checkbox" name="subdomain[]" value="Engineering, Chemical">
+        <label>Engineering, Chemical <span class="total">(1)</span></label>
+        <ul>
+          <li>
+            <input type="checkbox" name="subject[]" value="Industrial Chemistry">
+            <label>Industrial Chemistry</label>
+          </li>
+        </ul>
+      </li>
+      <li class="">
+        <input type="checkbox" name="subdomain[]" value="Engineering, Civil">
+        <label>Engineering, Civil </label>
+      </li>
+      <li class="">
+        <input type="checkbox" name="subdomain[]" value="Engineering, Electrical &amp; Electronic">
+        <label>Engineering, Electrical &amp; Electronic </label>
+      </li>
+      <li class="">
+        <input type="checkbox" name="subdomain[]" value="Engineering, Environmental">
+        <label>Engineering, Environmental </label>
+      </li>
+      <li class="has">
+        <input type="checkbox" name="subdomain[]" value="Engineering, Geological">
+        <label>Engineering, Geological <span class="total">(1)</span></label>
+        <ul>
+          <li>
+            <input type="checkbox" name="subject[]" value="Slope Engineering">
+            <label>Slope Engineering</label>
+          </li>
+        </ul>
+      </li>
+      <li class="">
+        <input type="checkbox" name="subdomain[]" value="Engineering, Industrial">
+        <label>Engineering, Industrial </label>
+      </li>
+      <li class="">
+        <input type="checkbox" name="subdomain[]" value="Engineering, Manufacturing">
+        <label>Engineering, Manufacturing </label>
+      </li>
+      <li class="">
+        <input type="checkbox" name="subdomain[]" value="Engineering, Marine">
+        <label>Engineering, Marine </label>
+      </li>
+      <li class="">
+        <input type="checkbox" name="subdomain[]" value="Engineering, Mechanical">
+        <label>Engineering, Mechanical </label>
+      </li>
+      <li class="">
+        <input type="checkbox" name="subdomain[]" value="Engineering, Multidisciplinary">
+        <label>Engineering, Multidisciplinary </label>
+      </li>
+      <li class="">
+        <input type="checkbox" name="subdomain[]" value="Engineering, Ocean">
+        <label>Engineering, Ocean </label>
+      </li>
+      <li class="">
+        <input type="checkbox" name="subdomain[]" value="Engineering, Petroleum">
+        <label>Engineering, Petroleum </label>
+      </li>
+      <li class="">
+        <input type="checkbox" name="subdomain[]" value="Ergonomics">
+        <label>Ergonomics </label>
+      </li>
+      <li class="has">
+        <input type="checkbox" name="subdomain[]" value="Imaging Science &amp; Photographic Technology">
+        <label>Imaging Science &amp; Photographic Technology <span class="total">(1)</span></label>
+        <ul>
+          <li>
+            <input type="checkbox" name="subject[]" value="Digital Image Processing and Machine Vision">
+            <label>Digital Image Processing and Machine Vision</label>
+          </li>
+        </ul>
+      </li>
+      <li class="">
+        <input type="checkbox" name="subdomain[]" value="Instruments &amp; Instrumentation">
+        <label>Instruments &amp; Instrumentation </label>
+      </li>
+      <li class="has">
+        <input type="checkbox" name="subdomain[]" value="Materials Science, Biomaterials">
+        <label>Materials Science, Biomaterials <span class="total">(1)</span></label>
+        <ul>
+          <li>
+            <input type="checkbox" name="subject[]" value="Material Science">
+            <label>Material Science</label>
+          </li>
+        </ul>
+      </li>
+      <li class="">
+        <input type="checkbox" name="subdomain[]" value="Materials Science, Ceramics">
+        <label>Materials Science, Ceramics </label>
+      </li>
+      <li class="">
+        <input type="checkbox" name="subdomain[]" value="Materials Science, Characterization, Testing">
+        <label>Materials Science, Characterization, Testing </label>
+      </li>
+      <li class="">
+        <input type="checkbox" name="subdomain[]" value="Materials Science, Coatings &amp; Films">
+        <label>Materials Science, Coatings &amp; Films </label>
+      </li>
+      <li class="">
+        <input type="checkbox" name="subdomain[]" value="Materials Science, Composites">
+        <label>Materials Science, Composites </label>
+      </li>
+      <li class="">
+        <input type="checkbox" name="subdomain[]" value="Materials Science, Multidisciplinary">
+        <label>Materials Science, Multidisciplinary </label>
+      </li>
+      <li class="">
+        <input type="checkbox" name="subdomain[]" value="Materials Science, Paper &amp; Wood">
+        <label>Materials Science, Paper &amp; Wood </label>
+      </li>
+      <li class="">
+        <input type="checkbox" name="subdomain[]" value="Materials Science, Textiles">
+        <label>Materials Science, Textiles </label>
+      </li>
+      <li class="">
+        <input type="checkbox" name="subdomain[]" value="Mechanics">
+        <label>Mechanics </label>
+      </li>
+      <li class="">
+        <input type="checkbox" name="subdomain[]" value="Metallurgy &amp; Metallurgical Engineering">
+        <label>Metallurgy &amp; Metallurgical Engineering </label>
+      </li>
+      <li class="">
+        <input type="checkbox" name="subdomain[]" value="Metallurgy &amp; Mining">
+        <label>Metallurgy &amp; Mining </label>
+      </li>
+      <li class="">
+        <input type="checkbox" name="subdomain[]" value="Mining &amp; Mineral Processing">
+        <label>Mining &amp; Mineral Processing </label>
+      </li>
+      <li class="">
+        <input type="checkbox" name="subdomain[]" value="Nano Science &amp; Nanotechnology">
+        <label>Nano Science &amp; Nanotechnology </label>
+      </li>
+      <li class="">
+        <input type="checkbox" name="subdomain[]" value="Operations Research &amp; Management Science">
+        <label>Operations Research &amp; Management Science </label>
+      </li>
+      <li class="">
+        <input type="checkbox" name="subdomain[]" value="Remote Sensing">
+        <label>Remote Sensing </label>
+      </li>
+      <li class="">
+        <input type="checkbox" name="subdomain[]" value="Robotics">
+        <label>Robotics </label>
+      </li>
+      <li class="">
+        <input type="checkbox" name="subdomain[]" value="Telecommunications">
+        <label>Telecommunications </label>
+      </li>
+      <li class="">
+        <input type="checkbox" name="subdomain[]" value="Transportation">
+        <label>Transportation </label>
+      </li>
+      <li class="">
+        <input type="checkbox" name="subdomain[]" value="Transportation Science &amp; Technology">
+        <label>Transportation Science &amp; Technology </label>
+      </li>
+    </ul>
+  </li>
+  <li class="has">
+    <input type="checkbox" name="domain[]" value="Arts and Humanities">
+    <label>Arts and Humanities <span class="total">(24)</span></label>
+    <ul>
+      <li class="">
+        <input type="checkbox" name="subdomain[]" value="Archaeology">
+        <label>Archaeology </label>
+      </li>
+      <li class="">
+        <input type="checkbox" name="subdomain[]" value="Architecture">
+        <label>Architecture </label>
+      </li>
+      <li class="">
+        <input type="checkbox" name="subdomain[]" value="Art">
+        <label>Art </label>
+      </li>
+      <li class="">
+        <input type="checkbox" name="subdomain[]" value="Asian Studies">
+        <label>Asian Studies </label>
+      </li>
+      <li class="">
+        <input type="checkbox" name="subdomain[]" value="Classics">
+        <label>Classics </label>
+      </li>
+      <li class="">
+        <input type="checkbox" name="subdomain[]" value="Cultural studies">
+        <label>Cultural studies </label>
+      </li>
+      <li class="">
+        <input type="checkbox" name="subdomain[]" value="Dance">
+        <label>Dance </label>
+      </li>
+      <li class="">
+        <input type="checkbox" name="subdomain[]" value="Film, Radio, Television">
+        <label>Film, Radio, Television </label>
+      </li>
+      <li class="">
+        <input type="checkbox" name="subdomain[]" value="Folklore">
+        <label>Folklore </label>
+      </li>
+      <li class="">
+        <input type="checkbox" name="subdomain[]" value="History">
+        <label>History </label>
+      </li>
+      <li class="">
+        <input type="checkbox" name="subdomain[]" value="History &amp; Philosophy Of Science">
+        <label>History &amp; Philosophy Of Science </label>
+      </li>
+      <li class="">
+        <input type="checkbox" name="subdomain[]" value="Humanities, Multidisciplinary">
+        <label>Humanities, Multidisciplinary </label>
+      </li>
+      <li class="">
+        <input type="checkbox" name="subdomain[]" value="Language &amp; Linguistics">
+        <label>Language &amp; Linguistics </label>
+      </li>
+      <li class="">
+        <input type="checkbox" name="subdomain[]" value="Literary Reviews">
+        <label>Literary Reviews </label>
+      </li>
+      <li class="has">
+        <input type="checkbox" name="subdomain[]" value="Literary Theory &amp; Criticism">
+        <label>Literary Theory &amp; Criticism <span class="total">(1)</span></label>
+        <ul>
+          <li>
+            <input type="checkbox" name="subject[]" value="Literary Translation">
+            <label>Literary Translation</label>
+          </li>
+        </ul>
+      </li>
+      <li class="">
+        <input type="checkbox" name="subdomain[]" value="Literature">
+        <label>Literature </label>
+      </li>
+      <li class="">
+        <input type="checkbox" name="subdomain[]" value="Literature, African, Australian, Canadian">
+        <label>Literature, African, Australian, Canadian </label>
+      </li>
+      <li class="">
+        <input type="checkbox" name="subdomain[]" value="Literature, American">
+        <label>Literature, American </label>
+      </li>
+      <li class="">
+        <input type="checkbox" name="subdomain[]" value="Literature, British Isles">
+        <label>Literature, British Isles </label>
+      </li>
+      <li class="">
+        <input type="checkbox" name="subdomain[]" value="Literature, German, Dutch, Scandinavian">
+        <label>Literature, German, Dutch, Scandinavian </label>
+      </li>
+      <li class="">
+        <input type="checkbox" name="subdomain[]" value="Literature, Romance">
+        <label>Literature, Romance </label>
+      </li>
+      <li class="">
+        <input type="checkbox" name="subdomain[]" value="Literature, Slavic">
+        <label>Literature, Slavic </label>
+      </li>
+      <li class="">
+        <input type="checkbox" name="subdomain[]" value="Medieval &amp; Renaissance Studies">
+        <label>Medieval &amp; Renaissance Studies </label>
+      </li>
+      <li class="">
+        <input type="checkbox" name="subdomain[]" value="Music">
+        <label>Music </label>
+      </li>
+    </ul>
+  </li>
+  <li class="has">
+    <input type="checkbox" name="domain[]" value="Medical and Health Sciences">
+    <label>Medical and Health Sciences <span class="total">(59)</span></label>
+    <ul>
+      <li class="">
+        <input type="checkbox" name="subdomain[]" value="Anatomy &amp; Morphology">
+        <label>Anatomy &amp; Morphology </label>
+      </li>
+      <li class="">
+        <input type="checkbox" name="subdomain[]" value="Chemistry, Medicinal">
+        <label>Chemistry, Medicinal </label>
+      </li>
+      <li class="">
+        <input type="checkbox" name="subdomain[]" value="Cytology &amp; Histology">
+        <label>Cytology &amp; Histology </label>
+      </li>
+      <li class="">
+        <input type="checkbox" name="subdomain[]" value="Genetics &amp; Heredity">
+        <label>Genetics &amp; Heredity </label>
+      </li>
+      <li class="">
+        <input type="checkbox" name="subdomain[]" value="Health Policy &amp; Services">
+        <label>Health Policy &amp; Services </label>
+      </li>
+      <li class="">
+        <input type="checkbox" name="subdomain[]" value="Immunology">
+        <label>Immunology </label>
+      </li>
+      <li class="">
+        <input type="checkbox" name="subdomain[]" value="Microscopy">
+        <label>Microscopy </label>
+      </li>
+      <li class="">
+        <input type="checkbox" name="subdomain[]" value="Neurosciences">
+        <label>Neurosciences </label>
+      </li>
+      <li class="">
+        <input type="checkbox" name="subdomain[]" value="Parasitology">
+        <label>Parasitology </label>
+      </li>
+      <li class="">
+        <input type="checkbox" name="subdomain[]" value="Pharmacology &amp; Pharmacy">
+        <label>Pharmacology &amp; Pharmacy </label>
+      </li>
+      <li class="">
+        <input type="checkbox" name="subdomain[]" value="Physiology">
+        <label>Physiology </label>
+      </li>
+      <li class="">
+        <input type="checkbox" name="subdomain[]" value="Allergy">
+        <label>Allergy </label>
+      </li>
+      <li class="">
+        <input type="checkbox" name="subdomain[]" value="Andrology">
+        <label>Andrology </label>
+      </li>
+      <li class="">
+        <input type="checkbox" name="subdomain[]" value="Anesthesiology">
+        <label>Anesthesiology </label>
+      </li>
+      <li class="">
+        <input type="checkbox" name="subdomain[]" value="Oncology">
+        <label>Oncology </label>
+      </li>
+      <li class="">
+        <input type="checkbox" name="subdomain[]" value="Cardiac &amp; Cardiovascular System">
+        <label>Cardiac &amp; Cardiovascular System </label>
+      </li>
+      <li class="">
+        <input type="checkbox" name="subdomain[]" value="Critical Care Medicine">
+        <label>Critical Care Medicine </label>
+      </li>
+      <li class="">
+        <input type="checkbox" name="subdomain[]" value="Psychology, Clinical">
+        <label>Psychology, Clinical </label>
+      </li>
+      <li class="">
+        <input type="checkbox" name="subdomain[]" value="Emergency Medicine">
+        <label>Emergency Medicine </label>
+      </li>
+      <li class="">
+        <input type="checkbox" name="subdomain[]" value="Dentistry Oral Surgery &amp; Medicine">
+        <label>Dentistry Oral Surgery &amp; Medicine </label>
+      </li>
+      <li class="">
+        <input type="checkbox" name="subdomain[]" value="Dermatology">
+        <label>Dermatology </label>
+      </li>
+      <li class="">
+        <input type="checkbox" name="subdomain[]" value="Substance Abuse">
+        <label>Substance Abuse </label>
+      </li>
+      <li class="">
+        <input type="checkbox" name="subdomain[]" value="Health Care Sciences &amp; Services">
+        <label>Health Care Sciences &amp; Services </label>
+      </li>
+      <li class="">
+        <input type="checkbox" name="subdomain[]" value="Endocrinology &amp; Metabolism">
+        <label>Endocrinology &amp; Metabolism </label>
+      </li>
+      <li class="">
+        <input type="checkbox" name="subdomain[]" value="Gastroenterology &amp; Herpetology">
+        <label>Gastroenterology &amp; Herpetology </label>
+      </li>
+      <li class="">
+        <input type="checkbox" name="subdomain[]" value="Geriatrics &amp; Gerontology">
+        <label>Geriatrics &amp; Gerontology </label>
+      </li>
+      <li class="">
+        <input type="checkbox" name="subdomain[]" value="Gerontology">
+        <label>Gerontology </label>
+      </li>
+      <li class="">
+        <input type="checkbox" name="subdomain[]" value="Hematology">
+        <label>Hematology </label>
+      </li>
+      <li class="">
+        <input type="checkbox" name="subdomain[]" value="Public Environmental &amp; Occupational Health">
+        <label>Public Environmental &amp; Occupational Health </label>
+      </li>
+      <li class="">
+        <input type="checkbox" name="subdomain[]" value="Infectious Diseases">
+        <label>Infectious Diseases </label>
+      </li>
+      <li class="">
+        <input type="checkbox" name="subdomain[]" value="Integrative &amp; Complementary Medicine">
+        <label>Integrative &amp; Complementary Medicine </label>
+      </li>
+      <li class="">
+        <input type="checkbox" name="subdomain[]" value="Medical Ethics">
+        <label>Medical Ethics </label>
+      </li>
+      <li class="">
+        <input type="checkbox" name="subdomain[]" value="Medicine Legal">
+        <label>Medicine Legal </label>
+      </li>
+      <li class="">
+        <input type="checkbox" name="subdomain[]" value="Medical Informatics">
+        <label>Medical Informatics </label>
+      </li>
+      <li class="">
+        <input type="checkbox" name="subdomain[]" value="Medical Laboratory Technology">
+        <label>Medical Laboratory Technology </label>
+      </li>
+      <li class="">
+        <input type="checkbox" name="subdomain[]" value="Medicine General &amp; Internal">
+        <label>Medicine General &amp; Internal </label>
+      </li>
+      <li class="">
+        <input type="checkbox" name="subdomain[]" value="Medicine Research &amp; Experimental">
+        <label>Medicine Research &amp; Experimental </label>
+      </li>
+      <li class="">
+        <input type="checkbox" name="subdomain[]" value="Clinical Neurology">
+        <label>Clinical Neurology </label>
+      </li>
+      <li class="">
+        <input type="checkbox" name="subdomain[]" value="Neuroimaging">
+        <label>Neuroimaging </label>
+      </li>
+      <li class="">
+        <input type="checkbox" name="subdomain[]" value="Nursing">
+        <label>Nursing </label>
+      </li>
+      <li class="">
+        <input type="checkbox" name="subdomain[]" value="Obstetrics &amp; Gynecology">
+        <label>Obstetrics &amp; Gynecology </label>
+      </li>
+      <li class="">
+        <input type="checkbox" name="subdomain[]" value="Ophthalmology">
+        <label>Ophthalmology </label>
+      </li>
+      <li class="">
+        <input type="checkbox" name="subdomain[]" value="Orthopedics">
+        <label>Orthopedics </label>
+      </li>
+      <li class="">
+        <input type="checkbox" name="subdomain[]" value="Otorhinolaryngology">
+        <label>Otorhinolaryngology </label>
+      </li>
+      <li class="">
+        <input type="checkbox" name="subdomain[]" value="Pathology">
+        <label>Pathology </label>
+      </li>
+      <li class="">
+        <input type="checkbox" name="subdomain[]" value="Pediatrics">
+        <label>Pediatrics </label>
+      </li>
+      <li class="">
+        <input type="checkbox" name="subdomain[]" value="Rehabilitation">
+        <label>Rehabilitation </label>
+      </li>
+      <li class="">
+        <input type="checkbox" name="subdomain[]" value="Psychiatry">
+        <label>Psychiatry </label>
+      </li>
+      <li class="">
+        <input type="checkbox" name="subdomain[]" value="Respiratory System">
+        <label>Respiratory System </label>
+      </li>
+      <li class="">
+        <input type="checkbox" name="subdomain[]" value="Rheumatology">
+        <label>Rheumatology </label>
+      </li>
+      <li class="">
+        <input type="checkbox" name="subdomain[]" value="Radiology Nuclear Medicine &amp; Medical Imaging">
+        <label>Radiology Nuclear Medicine &amp; Medical Imaging </label>
+      </li>
+      <li class="has">
+        <input type="checkbox" name="subdomain[]" value="Sport Sciences">
+        <label>Sport Sciences <span class="total">(1)</span></label>
+        <ul>
+          <li>
+            <input type="checkbox" name="subject[]" value="Physical Education">
+            <label>Physical Education</label>
+          </li>
+        </ul>
+      </li>
+      <li class="">
+        <input type="checkbox" name="subdomain[]" value="Surgery">
+        <label>Surgery </label>
+      </li>
+      <li class="">
+        <input type="checkbox" name="subdomain[]" value="Toxicology">
+        <label>Toxicology </label>
+      </li>
+      <li class="">
+        <input type="checkbox" name="subdomain[]" value="Transplantation">
+        <label>Transplantation </label>
+      </li>
+      <li class="">
+        <input type="checkbox" name="subdomain[]" value="Tropical Medicine">
+        <label>Tropical Medicine </label>
+      </li>
+      <li class="">
+        <input type="checkbox" name="subdomain[]" value="Urology &amp; Nephrology">
+        <label>Urology &amp; Nephrology </label>
+      </li>
+      <li class="">
+        <input type="checkbox" name="subdomain[]" value="Peripheral Vascular Disease">
+        <label>Peripheral Vascular Disease </label>
+      </li>
+      <li class="">
+        <input type="checkbox" name="subdomain[]" value="Virology">
+        <label>Virology </label>
+      </li>
+    </ul>
+  </li>
+</ul>
+<script language="javascript">
+$(document).on('click', '.tree label', function(e) {
+  $(this).next('ul').fadeToggle();
+  e.stopPropagation();
+});
+
+$(document).on('change', '.tree input[type=checkbox]', function(e) {
+  $(this).siblings('ul').find("input[type='checkbox']").prop('checked', this.checked);
+  $(this).parentsUntil('.tree').children("input[type='checkbox']").prop('checked', this.checked);
+  e.stopPropagation();
+});
+
+$(document).on('click', 'button', function(e) {
+  switch ($(this).text()) {
+    case 'Collepsed':
+      $('.tree ul').fadeOut();
+      break;
+    case 'Expanded':
+      $('.tree ul').fadeIn();
+      break;
+    case 'Checked All':
+      $(".tree input[type='checkbox']").prop('checked', true);
+      break;
+    case 'Unchek All':
+      $(".tree input[type='checkbox']").prop('checked', false);
+      break;
+    default:
+  }
+});
+</script>

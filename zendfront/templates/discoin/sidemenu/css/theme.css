@@ -1,0 +1,43 @@
+.tree-menu ul { list-style: none; }
+.tree-menu > ul { padding: 0; margin:5px;}
+.tree-menu a {
+  text-transform:uppercase;
+  display: block;
+  vertical-align: middle;
+  text-decoration: none;
+  padding: 6px;
+  border-radius: 4px;
+  margin-bottom: 1px;
+  color: #333;
+  -moz-transition: background-color 0.25s linear;
+  -webkit-transition: background-color 0.25s linear;
+  -o-transition: background-color 0.25s linear;
+  transition: background-color 0.25s linear;
+  -moz-transition-delay: 0.15s;
+  -webkit-transition-delay: 0.15s;
+  -o-transition-delay: 0.15s;
+  transition-delay: 0.15s;
+}
+
+.tree-menu a:hover {
+  color: #f53d3e;
+  -moz-transition: background-color 0.1s linear;
+  -webkit-transition: background-color 0.1s linear;
+  -o-transition: background-color 0.1s linear;
+  transition: background-color 0.1s linear;
+}
+.tree-menu a:hover { border-bottom:1px solid #DB7963; }
+.tree-menu .selected > a {
+  color: #f53d3e;
+  font-weight: bold;
+  text-decoration: none;
+}
+.tree-menu .closed > a,
+.tree-menu .opened > a {
+  padding-left: 24px;
+  background-position: 4px 8px;
+  background-repeat: no-repeat;
+}
+
+.tree-menu .closed > a { background-image: url(../img/icon-expand.gif); }
+.tree-menu .opened > a { background-image: url(../img/icon-collapse.gif); }

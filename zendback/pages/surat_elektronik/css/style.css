@@ -1,0 +1,16 @@
+.ch-image-new{
+	float:left;
+	padding-left:9px;
+	margin-right:9px;
+	width:30px;
+}
+.chat-group{
+	padding-left:10px;	
+}
+.ch-message-send{
+	margin-top:2px;
+}
+.clip_delete{
+	float:right; 
+	cursor:pointer;
+}

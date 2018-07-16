@@ -1,0 +1,6 @@
+@charset "utf-8";
+/* CSS Document */
+.merchants_class{
+	height:500px;
+	overflow:scroll;	
+}

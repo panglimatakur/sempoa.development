@@ -1,0 +1,16 @@
+.deal_tbl td.overflow{
+	max-height:200px;
+	overflow:scroll;	
+}
+.tbl_content{
+	margin-bottom:10px;
+	border-radius:5px;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border:1px solid #999;
+	background:#FFF;
+}
+.tbl_content td{
+	padding:4px;	
+	border-bottom:1px dashed #999999;
+}

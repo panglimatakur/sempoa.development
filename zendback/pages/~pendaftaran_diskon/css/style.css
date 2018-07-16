@@ -1,0 +1,10 @@
+@charset "utf-8";
+/* CSS Document */
+.prod_box{
+	width:auto; 
+	height:180px; 
+	max-width:500px; 
+	overflow:scroll; 
+	border-top:1px dashed #CCCCCC;
+	background:#FFF;
+}

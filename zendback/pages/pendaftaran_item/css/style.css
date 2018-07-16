@@ -1,0 +1,34 @@
+@charset "utf-8";
+/* CSS Document */
+.kategori_list{ padding-left:0; list-style:none; border:1px solid #E9E9E9;}
+.kategori_list li{ padding:10px; }
+.product_content{
+	border:1px solid #D4D4D4;
+	border-radius:0.6em;
+	-moz-border-radius:0.2em;
+	-webkit-border-radius:0.2em;
+	background:#E8E8E8;
+	font-size:12px;
+	padding:4px;
+}
+.product_content input, .product_content textarea, .product_content select{
+	width:100%;
+}
+
+.product_content .close_button{
+ 	position:absolute;
+	cursor:pointer;
+}
+.frame_photo{
+	height: 230px;
+	overflow:hidden;
+	margin-bottom:4px;	
+}
+.thumbnail_inner{
+	height:210px;	
+	overflow:hidden;
+}
+.code{
+	text-transform:uppercase;	
+}
+

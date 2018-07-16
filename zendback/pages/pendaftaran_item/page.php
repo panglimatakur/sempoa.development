@@ -1,0 +1,12 @@
+<?php defined('mainload') or die('Restricted Access'); 	?>
+<?php include $call->clas("class.fileanddirectory"); 	?>
+<?php include $call->clas("class.html2text"); 			?>
+<?php include $call->func("function.paging"); 			?>
+<?php include $call->lib("treeselect"); 				?>
+
+<?php include($page_dir."/controller.php"); 			?>
+<?php include($page_dir."/model.php"); 					?>
+<?php include($page_dir."/view.php"); 					?>
+
+<?php //include $call->lib("fancybox"); 					?>
+<?php include $call->lib("validation"); 				?>

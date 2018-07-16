@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="bootstrap/bootstrap.css">
+        <script src="js/jquery-2.1.4.min.js"></script>
+        <script src="js/qrcode.js"></script>
+        <script src="bootstrap/bootstrap.js"></script>
+    </head>
+
+    <body>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <ul class="nav nav-tabs" role="tablist">
+                        <li role="presentation" class="active">
+                            <a href="#qr_arbitrary" role="tab" data-toggle="tab">Arbitrary QR</a>
+                        </li>
+                        <li role="presentation">
+                            <a href="#qr_totp" role="tab" data-toggle="tab">TOTP QR</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content">
+                        <div role="tabpanel" class="tab-pane active" id="qr_arbitrary">
+                            <h2>Arbitrary QR Code Generator</h2>
+                            <div class="form-group">
+                                <label for="qr_arb_text">Text</label>
+                                <input class="form-control" type="text" id="qr_arb_secret"/>
+                            </div>
+                            <button type="submit" class="btn btn-default" id="qr_arb_button_gen">Generate QR</button>
+
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div style="margin-top: 1em;" id="qr_arb_canvas"></div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div role="tabpanel" class="tab-pane" id="qr_totp">
+                            <h2>TOTP QR Code Generator</h2>
+                            <div class="form-group">
+                                <label for="qr_appname">Application Name</label>
+                                <input class="form-control" type="text" id="qr_appname"/>
+                            </div>
+                            <div class="form-group">
+                                <label for="qr_user">User</label>
+                                <input class="form-control" type="text" id="qr_user"/>
+                            </div>
+                            <div class="form-group">
+                                <label for="qr_secret">Secret</label>
+                                <input class="form-control" type="text" id="qr_secret"/>
+                            </div>
+                            <button type="submit" class="btn btn-default" id="qr_button_gen">Generate QR</button>
+
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div style="margin-top: 1em;" id="qr_canvas"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <script>
+            $(function() {
+                $("#qr_button_gen").click(function() {
+                    app_name = $("#qr_appname").val();
+                    app_user = $("#qr_user").val();
+                    app_secret = $("#qr_secret").val();
+                    $("#qr_canvas").empty();
+                    new QRCode(document.getElementById("qr_canvas"),
+                            "otpauth://totp/" + app_name + ":" + app_user + "?secret=" + app_secret);
+                });
+
+                $("#qr_arb_button_gen").click(function() {
+                    app_text = $("#qr_arb_secret").val();
+                    $("#qr_arb_canvas").empty();
+                    new QRCode(document.getElementById("qr_arb_canvas"), app_text);
+                });
+            });
+        </script>
+    </body>
+</html>

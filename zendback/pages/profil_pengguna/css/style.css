@@ -1,0 +1,14 @@
+@charset "utf-8";
+/* CSS Document */
+.file_list{
+	border:1px solid #F0F0F0;
+	padding:5px;
+	margin:3px;	
+}
+.file_list:hover{
+	background:#F3F3F3;	
+}
+
+.file_list .file-name-doc{
+	padding-top:7px;
+}
