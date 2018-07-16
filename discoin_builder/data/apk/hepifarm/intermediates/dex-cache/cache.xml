@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="D:\xampp\htdocs\sempoa.community\discoin_builder\data\apk\hepifarm\intermediates\exploded-aar\com.android.support\support-core-utils\26.1.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="27.0.3"
+        sha1="233f60a165ae622c8b36731502ebbda0f65e1930">
+        <dex dex="D:\xampp\htdocs\sempoa.community\discoin_builder\data\hepifarm\platforms\android\build\intermediates\pre-dexed\debug\com.android.support-support-core-utils-26.1.0_6ed0b1b4a3851c294ca157e12bd0905eb2ed0447.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\tulcom\.gradle\caches\modules-2\files-2.1\android.arch.core\common\1.0.0\a2d487452376193fc8c103dd2b9bd5f2b1b44563\common-1.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="27.0.3"
+        sha1="a2d487452376193fc8c103dd2b9bd5f2b1b44563">
+        <dex dex="D:\xampp\htdocs\sempoa.community\discoin_builder\data\hepifarm\platforms\android\build\intermediates\pre-dexed\debug\common-1.0.0_31d72513f92babcfb21b7d14f8e233ac42ce2eb4.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\xampp\htdocs\sempoa.community\discoin_builder\data\apk\hepifarm\intermediates\exploded-aar\com.google.android.gms\play-services-tasks\12.0.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="27.0.3"
+        sha1="a38a8974c8d066800237d22a86df2e88cb9e065c">
+        <dex dex="D:\xampp\htdocs\sempoa.community\discoin_builder\data\hepifarm\platforms\android\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-tasks-12.0.1_1585f959293bfb04c840696b389ea7bc62653e00.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\tulcom\.gradle\caches\modules-2\files-2.1\com.android.support\support-annotations\26.1.0\814258103cf26a15fcc26ecce35f5b7d24b73f8\support-annotations-26.1.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="27.0.3"
+        sha1="0814258103cf26a15fcc26ecce35f5b7d24b73f8">
+        <dex dex="D:\xampp\htdocs\sempoa.community\discoin_builder\data\hepifarm\platforms\android\build\intermediates\pre-dexed\debug\support-annotations-26.1.0_64e1c5836cf8becaac7ab3f94f20aa37b82c5d1c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\xampp\htdocs\sempoa.community\discoin_builder\data\apk\hepifarm\intermediates\exploded-aar\com.google.android.gms\play-services-location\12.0.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="27.0.3"
+        sha1="16f423bae182fd81553d109269f7a5e13fd1cb52">
+        <dex dex="D:\xampp\htdocs\sempoa.community\discoin_builder\data\hepifarm\platforms\android\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-location-12.0.1_48e8b6669c47f5fd595da4b56ca94848e885b782.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\xampp\htdocs\sempoa.community\discoin_builder\data\apk\hepifarm\intermediates\exploded-aar\com.android.support\support-compat\26.1.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="27.0.3"
+        sha1="2442771a5590dd4eb4bce00c2e9dca9e22e4c963">
+        <dex dex="D:\xampp\htdocs\sempoa.community\discoin_builder\data\hepifarm\platforms\android\build\intermediates\pre-dexed\debug\com.android.support-support-compat-26.1.0_06e3a24aae59791e33b395a4f91f9fc789ffd62c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\xampp\htdocs\sempoa.community\discoin_builder\data\apk\hepifarm\intermediates\exploded-aar\com.google.android.gms\play-services-base\12.0.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="27.0.3"
+        sha1="ed8395f343c428cd55c60499f04323083f4ef0db">
+        <dex dex="D:\xampp\htdocs\sempoa.community\discoin_builder\data\hepifarm\platforms\android\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-base-12.0.1_8fd29fd9162e3bd8639de04430e982a97150188e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\xampp\htdocs\sempoa.community\discoin_builder\data\apk\hepifarm\intermediates\exploded-aar\org.apache.cordova\CordovaLib\6.2.3\debug\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="27.0.3"
+        sha1="7a1530ac850543228ac856fe951d258efe29f918">
+        <dex dex="D:\xampp\htdocs\sempoa.community\discoin_builder\data\hepifarm\platforms\android\build\intermediates\pre-dexed\debug\CordovaLib-6.2.3-debug_69231eb94e9a0a3c0528e0f794ffc45bb3d6fda3.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\xampp\htdocs\sempoa.community\discoin_builder\data\apk\hepifarm\intermediates\exploded-aar\com.android.support\support-v4\26.1.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="27.0.3"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="D:\xampp\htdocs\sempoa.community\discoin_builder\data\hepifarm\platforms\android\build\intermediates\pre-dexed\debug\com.android.support-support-v4-26.1.0_feccfa91c88a1c7efaa9e73a04b0700fc778813d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\xampp\htdocs\sempoa.community\discoin_builder\data\apk\hepifarm\intermediates\exploded-aar\android.arch.lifecycle\runtime\1.0.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="27.0.3"
+        sha1="b62fdc4cfef174c1e456014195c83fa7de7dc041">
+        <dex dex="D:\xampp\htdocs\sempoa.community\discoin_builder\data\hepifarm\platforms\android\build\intermediates\pre-dexed\debug\android.arch.lifecycle-runtime-1.0.0_c724a89c18020d3777299c8db6b9f23efaed9710.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\xampp\htdocs\sempoa.community\discoin_builder\data\apk\hepifarm\intermediates\exploded-aar\com.google.android.gms\play-services-basement\12.0.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="27.0.3"
+        sha1="22569eca3029ab00583c332a2be220cdbf091b35">
+        <dex dex="D:\xampp\htdocs\sempoa.community\discoin_builder\data\hepifarm\platforms\android\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-basement-12.0.1_1a3af7585f38b1a7b4cef82223d1592154e12310.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\xampp\htdocs\sempoa.community\discoin_builder\data\apk\hepifarm\intermediates\exploded-aar\com.android.support\support-media-compat\26.1.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="27.0.3"
+        sha1="f97cf85b0fe70d37a705111dafa6b1b418ea1650">
+        <dex dex="D:\xampp\htdocs\sempoa.community\discoin_builder\data\hepifarm\platforms\android\build\intermediates\pre-dexed\debug\com.android.support-support-media-compat-26.1.0_687f7668b235979644687d8253855494e5b2acda.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\xampp\htdocs\sempoa.community\discoin_builder\data\apk\hepifarm\intermediates\exploded-aar\tbxml-android\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="27.0.3"
+        sha1="5e0a23d59fea8ea5ac7889dc3943c9174c3109d3">
+        <dex dex="D:\xampp\htdocs\sempoa.community\discoin_builder\data\hepifarm\platforms\android\build\intermediates\pre-dexed\debug\intermediates-exploded-aar-tbxml-android_06d6f7d1d39554848b578a96dc59bca073dc00fb.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\xampp\htdocs\sempoa.community\discoin_builder\data\apk\hepifarm\intermediates\exploded-aar\com.google.android.gms\play-services-maps\12.0.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="27.0.3"
+        sha1="fc421b0511f4e492d097c84702b2a00f101fe08a">
+        <dex dex="D:\xampp\htdocs\sempoa.community\discoin_builder\data\hepifarm\platforms\android\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-maps-12.0.1_863e6f3399dee68c4696150fbfe1f94a90a03057.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\tulcom\.gradle\caches\modules-2\files-2.1\android.arch.lifecycle\common\1.0.0\e414a4cb28434e25c4f6aa71426eb20cf4874ae9\common-1.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="27.0.3"
+        sha1="e414a4cb28434e25c4f6aa71426eb20cf4874ae9">
+        <dex dex="D:\xampp\htdocs\sempoa.community\discoin_builder\data\hepifarm\platforms\android\build\intermediates\pre-dexed\debug\common-1.0.0_943adfecefadd2bead04ac3eeb037c0f93e542a2.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\xampp\htdocs\sempoa.community\discoin_builder\data\apk\hepifarm\intermediates\exploded-aar\com.android.support\support-fragment\26.1.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="27.0.3"
+        sha1="7efef32744ca4a436492d5cf28c08698cc2af256">
+        <dex dex="D:\xampp\htdocs\sempoa.community\discoin_builder\data\hepifarm\platforms\android\build\intermediates\pre-dexed\debug\com.android.support-support-fragment-26.1.0_ff761f2cf42e0ac39f148553c1977e1d01d17355.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\xampp\htdocs\sempoa.community\discoin_builder\data\apk\hepifarm\intermediates\exploded-aar\com.android.support\support-core-ui\26.1.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="27.0.3"
+        sha1="508f50705b4fde51a16259f29c854201a3044516">
+        <dex dex="D:\xampp\htdocs\sempoa.community\discoin_builder\data\hepifarm\platforms\android\build\intermediates\pre-dexed\debug\com.android.support-support-core-ui-26.1.0_fcee411682642d22f3df084ce9d576f23f72448b.jar" />
+    </item>
+
+</items>
