@@ -1,0 +1,86 @@
+@charset "utf-8";
+/* CSS Document */ 
+.merchant_pagination{
+	text-align:center;	
+	padding:10px;
+}
+.merchant_logo{
+	height:60px;
+	overflow:hidden;	
+	border:1px solid #CCC;;
+	text-align:center;
+	background:#FFF;
+}
+.desc-text{ 
+	text-align:justify;
+	font-size:11px;
+}
+.merchant_logo img{
+	width:100%;
+}
+
+<!-- GALLERY LIST -->
+.gallery{ 
+	padding:0; 
+    -moz-box-shadow: 0 1px 1px rgba(0,0,0,.05);
+    -webkit-box-shadow: 0 1px 1px rgba(0,0,0,.05);
+    box-shadow: 0 1px 1px rgba(0,0,0,.05);
+}
+.gallery li{
+	list-style:none;
+	border-bottom:1px solid rgba(0,0,0,.09);
+	margin:10px 0 0 0;
+    -moz-box-shadow: 0 1px 1px rgba(0,0,0,.05);
+    -webkit-box-shadow: 0 1px 1px rgba(0,0,0,.05);
+    box-shadow: 0 1px 1px rgba(0,0,0,.05);
+}
+.gallery li:last-of-type{
+	-moz-box-shadow: 0 0 0 rgba(0,0,0,0);
+	-webkit-box-shadow: 0 0 0 rgba(0,0,0,0);
+	box-shadow: 0 0 0 rgba(0,0,0,0);
+	border-bottom:none;
+}
+.gallery .btn{
+	margin-top:7px;
+}
+.gallery .gallery_pic{
+	overflow:hidden;
+}
+.gallery .gallery_pic img{
+	width:100%;
+	cursor:pointer;
+}
+.gallery .gallery_pic .gallery_pic_inner{
+	max-height:320px;
+	overflow:hidden;
+}
+
+.pframe{
+	-webkit-box-shadow: 0 1px 2px #999;
+	-moz-box-shadow: 0 1px 2px #999;
+	-ms-box-shadow: 0 1px 2px #999;
+	-o-box-shadow: 0 1px 2px #999;
+	box-shadow: 0 1px 2px #999;
+	padding:4px; 
+	margin-right:2px; 
+	float:left; 
+	text-align:center;
+	background:#FFF;
+}
+.pframe label .code{
+	font-size:2vmin;
+}
+.disc_label{
+	font-size:17px;
+	color:#3399FF;
+	font-weight:bold;
+}
+
+.btn-proses{
+	width:90%;	
+	margin:5px 5px 0 5px;
+	text-align:left;
+}
+a.tool-box{
+	text-decoration:none;	
+}
