@@ -16,7 +16,6 @@
 											a.ID_COMMUNITY ASC";
 					$q_list_comm	= $db->query($str_list_comm);
 					$num_community	= $db->numRows($q_list_comm);	
-					$result["content"] .= $str_list_comm;
 					while($dt_comm	= $db->fetchNextObject($q_list_comm)){ 
 						$community_name = $dt_comm->NAME; 
 						$lastID 		= $dt_comm->ID_COMMUNITY;
@@ -52,7 +51,6 @@
 									a.ID_CLIENT 	   != '1' 
 								GROUP BY b.ID_CLIENT
 								ORDER BY a.ID_COMMUNITY_MERCHANT ASC";
-								$result['content'] .= $str_merchant;
 								$q_merchant = $db->query($str_merchant);
 								while($dt_merchant	= $db->fetchNextObject($q_merchant)){
 									$map_discount_content = "";
@@ -130,6 +128,12 @@
 																			WHERE 
 																				ID_CLIENT='".$merchant_id."' 
 																			ORDER BY ID_CLIENT_MAP ASC");
+										$result['content'] .= "SELECT * 
+																			FROM 
+																				".$tpref."clients_maps 
+																			WHERE 
+																				ID_CLIENT='".$merchant_id."' 
+																			ORDER BY ID_CLIENT_MAP ASC";
 										while($dt_client_map =	$db->fetchNextObject($q_client_map)){
 											$marker_icon_path 	= ""; 	
 											if(is_file($basepath."/files/images/logos/".$merchant_logo)){
