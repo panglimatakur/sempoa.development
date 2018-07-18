@@ -52,6 +52,7 @@
 									a.ID_CLIENT 	   != '1' 
 								GROUP BY b.ID_CLIENT
 								ORDER BY a.ID_COMMUNITY_MERCHANT ASC";
+								$result['content'] .= $str_merchant;
 								$q_merchant = $db->query($str_merchant);
 								while($dt_merchant	= $db->fetchNextObject($q_merchant)){
 									$map_discount_content = "";
