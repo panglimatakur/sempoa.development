@@ -37,7 +37,7 @@ defined('mainload') or die('Restricted Access');
 		}
 		$mainpath		= "/var/www/html/paladin/sempoa";
 		$basepath 		= $_SERVER['DOCUMENT_ROOT'];
-		$discoin_api 	= "http://103.23.244.112:8866/discoin_api";
+		$discoin_api 	= "http://sempoa.community/discoin_api";
 	}
 	$website_name 	= "sempoa.community"; //do not use www
 	$product_name 	= "sempoa";
