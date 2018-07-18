@@ -60,7 +60,7 @@ if((!empty($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQ
             <div class="panel-body" style="padding:0">
                 <div class="tab-content">
                     <div id="tab-1" class="tab-pane active">';
-					include $call->inc("discoin_api/community/includes","discount_list.php");
+		$result['content'] .= $call->inc("discoin_api/community/includes","discount_list.php");
 		$result['content'] .='
 					</div>
 					<div id="tab-2" class="tab-pane">
