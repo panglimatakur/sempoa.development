@@ -1,0 +1,81 @@
+<script src="pages/community/js.js"></script>
+
+<div class="content" id="page_content">
+
+</div>
+<div id="detail" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title"></h4>
+            </div>
+            <div class="modal-body"></div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    var marker;
+    var x = document.getElementById("map_canvas");
+    function myMap(locations) {
+		
+        var cordinate  = new google.maps.LatLng(locations[0][0],locations[0][1]);	
+        var mapOptions = {
+            center      : cordinate,
+			draggable   : true,
+			scrollwheel : true,
+            zoom        : 13,
+            mapTypeId   : google.maps.MapTypeId.ROADMAP
+        }
+        var map = new google.maps.Map(document.getElementById("map_canvas"), mapOptions);
+
+		for (i = 0; i < locations.length; i++) { 
+			var icon = {
+				url: locations[i][4], // url
+				scaledSize: new google.maps.Size(40,40), // scaled size
+				origin: new google.maps.Point(0,0), // origin
+				anchor: new google.maps.Point(20,50) // anchor
+			};
+		
+			var marker_coord  = new google.maps.LatLng(locations[i][0],locations[i][1]);	
+			marker 	= new google.maps.Marker({
+				map			: map,
+				icon        : icon,
+				draggable	: true,
+				animation	: google.maps.Animation.DROP,
+				position	: marker_coord
+			})
+			marker.setMap(map);
+			var contentString 	= "<b>"+locations[i][6]+"<br>"+locations[i][2]+"<br>"+locations[i][5];
+			var infowindow 		= new google.maps.InfoWindow()
+			google.maps.event.addListener(marker, 'click', (function(marker,contentString,infowindow) {				
+				return function(){
+					infowindow.setContent(contentString);
+					infowindow.open(map, marker);
+				}
+			})(marker,contentString,infowindow));
+		}
+		
+		navigator.geolocation.getCurrentPosition(showPosition);
+		function showPosition(position) {
+			cur_location = new google.maps.LatLng(position.coords.latitude,position.coords.longitude);	
+			var current_marker = new google.maps.Marker({
+				position	: cur_location,
+				animation	: google.maps.Animation.DROP,
+				map			: map
+			});
+			var contentString 	= '<div>Posisi Kamu Disini</div>';
+			var infowindow 		= new google.maps.InfoWindow()
+			google.maps.event.addListener(current_marker, 'click', (function(current_marker,contentString,infowindow) {				
+				return function(){
+					infowindow.setContent(contentString);
+					infowindow.open(map, current_marker);
+				}
+			})(current_marker,contentString,infowindow));
+		}
+		
+		
+    }
+    //getLocation();
+</script>

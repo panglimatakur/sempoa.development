@@ -1,0 +1,59 @@
+<script src="pages/beranda/js.js"></script>
+<script type="text/javascript" src="template/lib/barcodeScanner.js"></script>
+<link rel="stylesheet" type="text/css" href="pages/beranda/css.css" />
+
+<div class="content">
+    <!--<div class="col-xs-12 text-center home-banner-state">
+        <img src="template/img/9b641-text194_2.gif">
+    </div>-->
+
+    <div class="well well-lg id-box">
+        <div class="id-box-coin">
+            <strong>COIN</strong>
+            <br>
+            <small>Community Identification Number</small>
+            <input type="text" id="label_coin" class="form-control" readonly>
+        </div>
+        <table class="table">
+            <tr>
+                <td>Nama</td>
+                <td id="label_username"></td>
+            </tr>
+            <tr>
+                <td>Bergabung</td>
+                <td id="label_join"></td>
+            </tr>
+            <tr>
+                <td>Berakhir</td>
+                <td id="label_expired"></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <button type="button" class="btn btn-primary btn-large btn-scan" id="scan">
+                        <i class="icsw16-white icsw16-money-2"></i> Scan Code
+                    </btn>
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+<div id="qrcode_result" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title"><i class="icsw16-building"></i> 
+                    <span id="merchant_name">Informasi Merchant</span>
+                </h4>
+            </div>
+            <div class="modal-body">
+            </div>
+            <div class="modal-footer">
+                <button type="button" class='btn btn-primary btn-scan' style="display:none">Kirim Voucher</button>
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
