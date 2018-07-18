@@ -16,6 +16,7 @@
 											a.ID_COMMUNITY ASC";
 					$q_list_comm	= $db->query($str_list_comm);
 					$num_community	= $db->numRows($q_list_comm);	
+					$result["content"] .= $str_list_comm;
 					while($dt_comm	= $db->fetchNextObject($q_list_comm)){ 
 						$community_name = $dt_comm->NAME; 
 						$lastID 		= $dt_comm->ID_COMMUNITY;
