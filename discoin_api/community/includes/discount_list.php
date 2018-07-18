@@ -128,12 +128,6 @@
 																			WHERE 
 																				ID_CLIENT='".$merchant_id."' 
 																			ORDER BY ID_CLIENT_MAP ASC");
-										$result['content'] .= "SELECT * 
-																			FROM 
-																				".$tpref."clients_maps 
-																			WHERE 
-																				ID_CLIENT='".$merchant_id."' 
-																			ORDER BY ID_CLIENT_MAP ASC";
 										while($dt_client_map =	$db->fetchNextObject($q_client_map)){
 											$marker_icon_path 	= ""; 	
 											if(is_file($basepath."/files/images/logos/".$merchant_logo)){
