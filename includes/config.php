@@ -3,7 +3,7 @@ error_reporting(E_ERROR|E_WARNING);
 date_default_timezone_set('Asia/Jakarta');
 defined('mainload') or die('Restricted Access');
 
-	$conf = 1;
+	$conf = 2;
 	if($conf == 1){
 		$db_host 		= 'localhost';
 		$db_user 		= 'root';
@@ -16,28 +16,28 @@ defined('mainload') or die('Restricted Access');
 	}
 	if($conf == 2){
 		$db_host 		= 'localhost';
-		$db_user 		= 'root';
-		$db_password 	= 'sempoa240483';
+		$db_user 		= 'www';
+		$db_password 	= 'ternoda212';
 		$db_name 		= 'db_sempoa';
 		$host 			= substr_count($_SERVER['HTTP_HOST'],"www.");
 		if (!empty($_SERVER['HTTPS'])) {
-			$dirhost		= "https://sempoa.community";
+			$dirhost		= "http://103.23.244.112:8866";
 			$websock_conn	= "https://sempoa.community:3000";
 			if($host > 0){
-				$dirhost		= "https://www.sempoa.community";
+				$dirhost		= "http://103.23.244.112:8866";
 				$websock_conn	= "https://www.sempoa.community:3000";
 			}
 		}else{
-			$dirhost		= "http://sempoa.community";
+			$dirhost		= "http://103.23.244.112:8866";
 			$websock_conn	= "http://sempoa.community:3000";
 			if($host > 0){
 				$dirhost		= "http://www.sempoa.community";
 				$websock_conn	= "http://www.sempoa.community:3000";
 			}
 		}
-		$mainpath		= "/var/www/html/";
+		$mainpath		= "/var/www/html/paladin/sempoa";
 		$basepath 		= $_SERVER['DOCUMENT_ROOT'];
-		$discoin_api 	= "http://sempoa.community/discoin_api";
+		$discoin_api 	= "http://103.23.244.112:8866/discoin_api";
 	}
 	$website_name 	= "sempoa.community"; //do not use www
 	$product_name 	= "sempoa";
