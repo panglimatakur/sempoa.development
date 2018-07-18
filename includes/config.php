@@ -21,14 +21,14 @@ defined('mainload') or die('Restricted Access');
 		$db_name 		= 'db_sempoa';
 		$host 			= substr_count($_SERVER['HTTP_HOST'],"www.");
 		if (!empty($_SERVER['HTTPS'])) {
-			$dirhost		= "http://103.23.244.112:8866";
-			$websock_conn	= "https://sempoa.community:3000";
+			$dirhost		= "http://sempoa.community";
+			$websock_conn	= "http://sempoa.community:3000";
 			if($host > 0){
-				$dirhost		= "http://103.23.244.112:8866";
+				$dirhost		= "http://sempoa.community";
 				$websock_conn	= "https://www.sempoa.community:3000";
 			}
 		}else{
-			$dirhost		= "http://103.23.244.112:8866";
+			$dirhost		= "http://sempoa.community";
 			$websock_conn	= "http://sempoa.community:3000";
 			if($host > 0){
 				$dirhost		= "http://www.sempoa.community";
