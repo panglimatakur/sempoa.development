@@ -39,8 +39,7 @@ if((!empty($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQ
 			
 			
 			$all_discount 		= $db->recount("SELECT * FROM ".$tpref."clients_discounts WHERE ID_CLIENT = '".$id_merchant."' AND DISCOUNT_STATUS='3'");		
-			$result["content"]  = "SELECT CLIENT_NAME,COLOUR FROM ".$tpref."clients 
-												  WHERE ID_CLIENT='".$id_merchant."'".'
+			$result["content"]  = "SELECT * FROM ".$tpref."clients_discounts WHERE ID_CLIENT = '".$id_merchant."' AND DISCOUNT_STATUS='3'".'
         <div class="panel blank-panel" style="background:none">
             <div class="panel-heading" style="padding:0">
                 <div class="panel-options">
