@@ -1,0 +1,102 @@
+.content{
+    background: url("../../template/img/bg-message.jpg");
+}
+.message_txtarea{
+    border-radius:0;
+    -moz-border-radius:0;
+    -webkit-border-radius:0;
+    margin-top:10px;
+}
+.img-box{
+    height:45px;
+    width:45px;
+    background: #FFF;
+    overflow:hidden;
+    margin-top:0;
+    border:3px solid rgb(255, 255, 255);
+    border-radius:50%;
+    -webkit-border-radius:50%;
+    -moz-border-radius:50%;
+}
+.ch-recipient img{ width:100%; }
+.ch-message-box{
+    position:fixed;
+    bottom:0;
+}
+.ch-content{ font-size:13px; color:#7F7F7F; }
+.ch-time{ margin-top:10px; font-size:11px; text-align:right; color:rgb(233, 116, 116); font-weight:bold; }
+.ch-name{ font-size:10px; color:rgb(233, 116, 116); font-weight:bold;}
+/* ============================================================================================================================
+== BUBBLE WITH A BORDER AND TRIANGLE
+** ============================================================================================================================ */
+
+/* THE SPEECH BUBBLE
+------------------------------------------------------------------------------------------------------------------------------- */
+
+.bubble {
+position: relative;
+width: 100%;
+height: auto;
+padding: 6px;
+margin-bottom:20px;
+background: #FFFFFF;
+-webkit-border-radius: 10px;
+-moz-border-radius: 10px;
+border-radius: 10px;
+}
+
+.bubble-right:after 
+{
+content: '';
+position: absolute;
+border-style: solid;
+border-width: 9px 0 9px 21px;
+border-color: transparent #FFFFFF;
+display: block;
+width: 0;
+z-index: 1;
+right: -21px;
+top: 7px;
+}
+
+.bubble-right:before 
+{
+content: '';
+position: absolute;
+border-style: solid;
+border-width: 9px 0 9px 21px;
+border-color: transparent rgb(212, 210, 210) ;
+display: block;
+width: 0;
+z-index: 0;
+right: -22px;
+top: 7px;
+} 
+
+.bubble-left:after 
+{
+content: '';
+position: absolute;
+border-style: solid;
+border-width: 9px 21px 9px 0;
+border-color: transparent #FFFFFF;
+display: block;
+width: 0;
+z-index: 1;
+left: -21px;
+top: 7px;
+}
+
+.bubble-left:before 
+{
+content: '';
+position: absolute;
+border-style: solid;
+border-width: 9px 21px 9px 0;
+border-color: transparent rgba(255,255,255,.1);
+display: block;
+width: 0;
+z-index: 0;
+left: -22px;
+top: 7px;
+}

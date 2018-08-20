@@ -1,0 +1,12 @@
+
+.navbar-inner { 
+	border-top		: 1px solid #e32500; 
+	border-bottom	: 1px solid #c61e05; 
+	background		: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #e32500), color-stop(100%, #c61e05)); 	
+	background		: -webkit-linear-gradient(top, #e32500, #c61e05); 
+	background		: -moz-linear-gradient(top, #e32500, #c61e05); 
+	background		: -ms-linear-gradient(top, #e32500, #c61e05); 
+	background		: -o-linear-gradient(top, #e32500, #c61e05); 
+	background		: linear-gradient(top, #e32500, #c61e05); 
+	background-color: #c61e05; 
+}
