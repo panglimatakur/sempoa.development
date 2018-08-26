@@ -1,7 +1,5 @@
 <IfModule mod_rewrite.c>
 RewriteEngine On
-RewriteBase /  
-RewriteCond %{REQUEST_FILENAME} !-f  
-RewriteCond %{REQUEST_FILENAME} !-d  
-RewriteRule . /index.php [L]  
+RewriteRule ^(website)/([a-z._]+)$ index.php?module=$1&page=$2 [L]
+
 </ifModule>
