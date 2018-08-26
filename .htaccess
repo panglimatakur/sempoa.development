@@ -1,5 +1,5 @@
 <IfModule mod_rewrite.c>
 RewriteEngine On
-Options +FollowSymLinks
+RewriteRule ^([a-zA-Z0-9_-]+)$ index.php?page=$1
 RewriteRule ^(sitemap.xml)$ 						sitemap.php [L]
 </ifModule>
