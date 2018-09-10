@@ -1,4 +1,4 @@
-var conf = JSON.parse("{"+$("#config").val()+"}");
+//var conf = JSON.parse("{"+$("#config").val()+"}");
 //var ring = JSON.parse("{"+$("#ringtones").val()+"}");
 function new_balance(){
 		new_cash	= $("#cash").val();
