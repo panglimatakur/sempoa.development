@@ -320,6 +320,35 @@
     <script src="<?php echo $web_btpl_dir; ?>js/plugins/bootbox/bootbox.js"></script>
     <script src="<?php echo $web_btpl_dir; ?>js/plugins/metisMenu/jquery.metisMenu.js"></script>
 
+    <!-- Peity -->
+    <script src="<?php echo $web_btpl_dir; ?>js/plugins/peity/jquery.peity.min.js"></script>
+    <script src="<?php echo $web_btpl_dir; ?>js/demo/peity-demo.js"></script>
+
+    <!-- SlimScroll -->
+    <script src="<?php echo $web_btpl_dir; ?>js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+
+    <!-- Custom and plugin javascript -->
+    <script src="<?php echo $web_btpl_dir; ?>js/inspinia.js"></script>
+    <script src="<?php echo $web_btpl_dir; ?>js/plugins/pace/pace.min.js"></script>
+
+    <!-- jQuery UI -->
+    <script src="<?php echo $web_btpl_dir; ?>js/plugins/jquery-ui/jquery-ui.min.js"></script>
+    
+    <!-- Switch -->
+	<script src="<?php echo $web_btpl_dir; ?>js/plugins/switch/bootstrap-switch.js"></script>
+       
+    <!-- iCheck -->
+    <script src="<?php echo $web_btpl_dir; ?>js/plugins/iCheck/icheck.min.js"></script>
+	<script src="<?php echo $web_btpl_dir; ?>js/plugins/chosen/chosen.jquery.js"></script>
+    <!-- GITTER -->
+    <script src="<?php echo $web_btpl_dir; ?>js/plugins/gritter/jquery.gritter.min.js"></script>
+
+    <!-- Sparkline -->
+    <script src="<?php echo $web_btpl_dir; ?>js/plugins/sparkline/jquery.sparkline.min.js"></script>
+
+    <!-- Sparkline demo data  -->
+    <script src="<?php echo $web_btpl_dir; ?>js/demo/sparkline-demo.js"></script>
+    <!-- Toastr -->
 </body>
 
 <!-- Site: HackForums.Ru | E-mail: abuse@hackforums.ru | Skype: h2osancho -->
