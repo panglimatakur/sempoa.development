@@ -327,11 +327,9 @@
     <!-- SlimScroll -->
     <script src="<?php echo $web_btpl_dir; ?>js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
 
-    <!-- Custom and plugin javascript -->
-    <script src="<?php echo $web_btpl_dir; ?>js/inspinia.js"></script>
-    <script src="<?php echo $web_btpl_dir; ?>js/plugins/pace/pace.min.js"></script>
 
-
+    <!-- jQuery UI -->
+    <script src="<?php echo $web_btpl_dir; ?>js/plugins/jquery-ui/jquery-ui.min.js"></script>
     
     <!-- Switch -->
 	<script src="<?php echo $web_btpl_dir; ?>js/plugins/switch/bootstrap-switch.js"></script>
