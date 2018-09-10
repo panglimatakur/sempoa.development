@@ -1,5 +1,5 @@
 var conf = JSON.parse("{"+$("#config").val()+"}");
-var ring = JSON.parse("{"+$("#ringtones").val()+"}");
+//var ring = JSON.parse("{"+$("#ringtones").val()+"}");
 function new_balance(){
 		new_cash	= $("#cash").val();
 		res 		= accounting.formatMoney(new_cash,"Balance : Rp.",2,".",","); // €4.999,99	
