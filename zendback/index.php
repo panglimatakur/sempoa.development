@@ -155,7 +155,7 @@ if(!empty($direction) && $direction == "login"){
 
 //$table = $db->query("SHOW TABLES");
 if(!empty($_SESSION['uidkey'])){
-	
+	include $call->inc("zendback/templates/admin-v2.1","index.php");
 }else{
 	include $call->inc("zendback/templates/admin-v2.1","login.php");
 }
