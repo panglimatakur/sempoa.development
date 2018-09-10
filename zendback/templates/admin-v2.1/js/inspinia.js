@@ -1,11 +1,5 @@
 $(document).ready(function () {
 
-    // Add body-small class if window less than 768px
-    if ($(this).width() < 769) {
-        $('body').addClass('body-small')
-    } else {
-        $('body').removeClass('body-small')
-    }
 
     // MetsiMenu
     $('#side-menu').metisMenu();
@@ -112,6 +106,38 @@ $(document).ready(function () {
     }
     fix_height();
 
+    // Fixed Sidebar
+    $(window).bind("load", function () {
+        if ($("body").hasClass('fixed-sidebar')) {
+            $('.sidebar-collapse').slimScroll({
+                height: '100%',
+                railOpacity: 0.9
+            });
+        }
+    })
+
+    // Move right sidebar top after scroll
+    $(window).scroll(function(){
+        if ($(window).scrollTop() > 0 && !$('body').hasClass('fixed-nav') ) {
+            $('#right-sidebar').addClass('sidebar-top');
+        } else {
+            $('#right-sidebar').removeClass('sidebar-top');
+        }
+    });
+
+    $(document).bind("load resize scroll", function() {
+        if(!$("body").hasClass('body-small')) {
+            fix_height();
+        }
+    });
+
+    $("[data-toggle=popover]")
+        .popover();
+
+    // Add slimscroll to element
+    $('.full-height-scroll').slimscroll({
+        height: '100%'
+    })
 });
 
 
