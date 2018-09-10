@@ -297,7 +297,7 @@
                 
             <div class="wrapper wrapper-content animated fadeInRight">
                 <div class="row">
-					<?php if(!empty($page)){  } ?>
+					<?php if(!empty($page)){ include $call->inc("zendback/pages","index.php"); } ?>
                 </div>  
             </div>
 
