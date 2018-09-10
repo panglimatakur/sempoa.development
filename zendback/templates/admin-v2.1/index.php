@@ -320,6 +320,10 @@
     <script src="<?php echo $web_btpl_dir; ?>js/plugins/bootbox/bootbox.js"></script>
     <script src="<?php echo $web_btpl_dir; ?>js/plugins/metisMenu/jquery.metisMenu.js"></script>
 
+    <!-- Peity -->
+    <script src="<?php echo $web_btpl_dir; ?>js/plugins/peity/jquery.peity.min.js"></script>
+    <script src="<?php echo $web_btpl_dir; ?>js/demo/peity-demo.js"></script>
+
     
    	<?php
         if(is_file($page_dir."/js/js.js"))	{  ?>
