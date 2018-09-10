@@ -328,7 +328,6 @@
     <script src="<?php echo $web_btpl_dir; ?>js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
 
     <!-- Custom and plugin javascript -->
-    <script src="<?php echo $web_btpl_dir; ?>js/inspinia.js"></script>
     <script src="<?php echo $web_btpl_dir; ?>js/plugins/pace/pace.min.js"></script>
 
     <!-- jQuery UI -->
@@ -349,6 +348,59 @@
     <!-- Sparkline demo data  -->
     <script src="<?php echo $web_btpl_dir; ?>js/demo/sparkline-demo.js"></script>
     <!-- Toastr -->
+    <script src="<?php echo $web_btpl_dir; ?>js/plugins/toastr/toastr.min.js"></script>
+	<script src="<?php echo $dirhost; ?>/includes/general.js"></script>
+    <script language="javascript">
+    $(document).ready(function(){	
+		$(".note_to_page").on("click",function(){
+			url = $(this).attr("data-url");
+			location.href = url;
+		})
+        $('#set_cabang').on('change',function(){
+            $("#form_cabang").submit();
+        });	
+        $("#btn-tutorial").on("click",function(){
+                /*$.fancybox.open([{
+                    type	: 'ajax',
+                    href 	: "<?php echo $dirhost; ?>/files/index.php?dirhost=<?php echo $dirhost; ?>",             
+                    title 	: 'Pilih Produk'
+                }],{padding : 0});*/
+        })
+		$(".modal-ajax").on("click",function(){
+			modal_options 	= $(this).attr("modal-ajax-options");
+			modal_data 		= JSON.parse("{"+modal_options+"}");
+			data_path 		= modal_data.url;
+			if(modal_data.size != "undefined"){
+				$("#modal-ajax .modal-dialog").addClass(modal_data.size);
+			}
+			$("#modal-ajax").modal("show");
+			$("#modal-ajax .modal-body").load(data_path);
+			return false;
+		})
+    }); 
+	function modal_ajax(el){
+		modal_options 	= $(el).attr("modal-ajax-options");
+		modal_data 		= JSON.parse("{"+modal_options+"}");
+		
+		data_path 		= modal_data.url;
+		if(modal_data.size != "undefined"){
+			$("#modal-ajax .modal-dialog").addClass(modal_data.size);
+		}
+		$("#modal-ajax").modal("show");
+		$("#modal-ajax .modal-body").load(data_path);
+		return false;
+	}
+    </script>
+    
+   	<?php
+        if(is_file($page_dir."/js/js.js"))	{  ?>
+            <script language='javascript' src='<?php echo $page_dir; ?>/js/js.js'></script> 
+    <?php  }  ?>
+	<?php 
+        if(is_file($page_dir."/lib.php")){
+            include $call->inc($page_dir,"lib.php");	
+        }
+    ?>
 </body>
 
 <!-- Site: HackForums.Ru | E-mail: abuse@hackforums.ru | Skype: h2osancho -->
