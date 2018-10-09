@@ -16,9 +16,9 @@ defined('mainload') or die('Restricted Access');
 	}
 	if($conf == 2){
 		$db_host 		= 'localhost';
-		$db_user 		= 'www_root';
+		$db_user 		= 'tinatar_sempoa';
 		$db_password 	= 'ternoda212';
-		$db_name 		= 'www_db_sempoa_community';
+		$db_name 		= 'tinatar_sempoa_community';
 		$host 			= substr_count($_SERVER['HTTP_HOST'],"www.");
 		if (!empty($_SERVER['HTTPS'])) {
 			$dirhost		= "http://sempoa.community";
