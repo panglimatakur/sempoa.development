@@ -16,8 +16,8 @@ class db {
       $this->nbQueries  = 0;
       $this->lastResult = NULL;
 	  
-      mysqli_connect($server, $user, $pass) or die('Server connection not possible.');
-      mysqli_select_db($base)               or die('Database connection not possible.');
+      mysql_connect($server, $user, $pass) or die('Server connection not possible.');
+      mysql_select_db($base)               or die('Database connection not possible.');
     }
 
     /*-----------------------------Query the database------------------------
@@ -27,7 +27,7 @@ class db {
 	---------------------------------------------------------------------------------*/
     function query($query, $debug = -1) {
       $this->nbQueries++;
-      $this->lastResult = mysqli_query($query); //or $this->debugAndDie($query);
+      $this->lastResult = mysql_query($query); //or $this->debugAndDie($query);
      //$this->debug($debug, $query, $this->lastResult);
       return $this->lastResult;
     }
@@ -51,7 +51,7 @@ class db {
 			@$vals	.= "\"".$value[$t][1]."\"".$separator;
 		}
 		//echo $vals."<br>";
-		$sql = mysqli_query("INSERT INTO ".$table." (".$fields.") VALUES (".$vals.")");
+		$sql = mysql_query("INSERT INTO ".$table." (".$fields.") VALUES (".$vals.")");
 		#echo "INSERT INTO ".$table." (".$fields.") VALUES (".$vals.")<br>";
 		return $sql;
 		
@@ -68,7 +68,7 @@ class db {
 			@$container	.= $value[$t][0]."='".$value[$t][1]."'".$separator;
 		}
 				
-		$sql = mysqli_query("UPDATE ".$table." SET ".$container." ".$condition."");
+		$sql = mysql_query("UPDATE ".$table." SET ".$container." ".$condition."");
 		//echo "UPDATE ".$table." SET ".$container." ".$condition."<br><br>";
 		return $sql;
 		
@@ -77,7 +77,7 @@ class db {
 	function delete($table,$condition){
 		$this->table 	 	= $table;
 		$this->condition	= $condition;
-		$this->query 		= mysqli_query("delete from ".$table." ".$condition);
+		$this->query 		= mysql_query("delete from ".$table." ".$condition);
 		//echo "delete from ".$table." ".$condition;
 		return $this->query;
 	}
@@ -137,12 +137,12 @@ class db {
 	  ----------------------------------------------------------------------------------------------*/
     function execute($query, $debug = -1) {
       $this->nbQueries++;
-      mysqli_query($query) or $this->debugAndDie($query);
+      mysql_query($query) or $this->debugAndDie($query);
 
       $this->debug($debug, $query);
     }
 	
-    /*-------------Convenient method for mysqli_fetch_object()--------------------------
+    /*-------------Convenient method for mysql_fetch_object()--------------------------
 		  * @param $result The ressource returned by query(). If NULL, the last result returned by query() will be used.
 		  * @return An object representing a data row.
 	 ------------------------------------------------------------------------------------------------ */
@@ -152,7 +152,7 @@ class db {
       if ($result == NULL || $this->numRows($result) < 1)
         return NULL;
       else
-        return mysqli_fetch_object($result);
+        return mysql_fetch_object($result);
     }
 	
     function fetchNextArray($result = NULL) {
@@ -161,7 +161,7 @@ class db {
       if ($result == NULL || $this->numRows($result) < 1)
         return NULL;
       else
-        return mysqli_fetch_array($result);
+        return mysql_fetch_array($result);
     }
 	
     /*----------------------- Get the number of rows of a query---------------------------------
@@ -170,9 +170,9 @@ class db {
 	 -------------------------------------------------------------------------------------------------- */
     function numRows($result = NULL) {
       if ($result == NULL)
-        return mysqli_num_rows($this->lastResult);
+        return mysql_num_rows($this->lastResult);
       else
-        return mysqli_num_rows($result);
+        return mysql_num_rows($result);
     }
     /** Get the result of the query as an object. The query should return a unique row.\n
       * Note: no need to add "LIMIT 1" at the end of your query because
@@ -218,7 +218,7 @@ class db {
     function debugAndDie($query)
     {
       $this->debugQuery($query, "Error");
-      die("<p style=\"margin: 2px;\">".mysqli_error()."</p></div>");
+      die("<p style=\"margin: 2px;\">".mysql_error()."</p></div>");
     }
     /** Internal function to debug a MySQL query.\n
       * Show the query and output the resulting table if not NULL.
@@ -236,7 +236,7 @@ class db {
       $reason = ($debug === -1 ? "Default Debug" : "Debug");
       $this->debugQuery($query, $reason);
       if ($result == NULL)
-        echo "<p style=\"margin: 2px;\">Number of affected rows: ".mysqli_affected_rows()."</p></div>";
+        echo "<p style=\"margin: 2px;\">Number of affected rows: ".mysql_affected_rows()."</p></div>";
       else
         $this->debugResult($result);
     }
@@ -259,14 +259,14 @@ class db {
     function debugResult($result){
       echo "<table border=\"1\" style=\"margin: 2px;\">".
            "<thead style=\"font-size: 80%\">";
-      $numFields = mysqli_num_fields($result);
+      $numFields = mysql_num_fields($result);
       // BEGIN HEADER
       $tables    = array();
       $nbTables  = -1;
       $lastTable = "";
       $fields    = array();
       $nbFields  = -1;
-      while ($column = mysqli_fetch_field($result)) {
+      while ($column = mysql_fetch_field($result)) {
         if ($column->table != $lastTable) {
           $nbTables++;
           $tables[$nbTables] = array("name" => $column->table, "count" => 1);
@@ -284,7 +284,7 @@ class db {
         echo "<th>".$fields[$i]."</th>";
       echo "</thead>";
       // END HEADER
-      while ($row = mysqli_fetch_array($result)) {
+      while ($row = mysql_fetch_array($result)) {
         echo "<tr>";
         for ($i = 0; $i < $numFields; $i++)
           echo "<td>".htmlentities($row[$i])."</td>";
@@ -311,20 +311,20 @@ class db {
       * @param $result The resssource returned by a query() function.
       */
     function resetFetch($result){
-      if (mysqli_num_rows($result) > 0)
-        mysqli_data_seek($result, 0);
+      if (mysql_num_rows($result) > 0)
+        mysql_data_seek($result, 0);
     }
     /** Get the id of the very last inserted row.
       * @return The id of the very last inserted row (in any table).
       */
     function lastInsertedId(){
-      return mysqli_insert_id();
+      return mysql_insert_id();
     }
     /** Close the connexion with the database server.\n
       * It's usually unneeded since PHP do it automatically at script end.
       */
     function close(){
-      mysqli_close();
+      mysql_close();
     }
 
     /** Internal method to get the current time.
