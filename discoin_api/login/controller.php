@@ -6,12 +6,12 @@
 	include("../../includes/functions.php");
 
 	$callback 				= 'mycallback';
-	$callback 				= isset($_REQUEST['mycallback'])	? $_REQUEST['mycallback'] 				: "";
-	$direction 				= isset($_REQUEST['direction']) 	? $_REQUEST['direction'] 				: "";
-	$username 				= isset($_REQUEST['username']) 		? $_REQUEST['username'] 				: "";
-	$password 				= isset($_REQUEST['password']) 		? $_REQUEST['password'] 				: "";
+	$callback 				= isset($_REQUEST['mycallback'])	? $_REQUEST['mycallback'] 			: "";
+	$direction 				= isset($_REQUEST['direction']) 	? $_REQUEST['direction'] 			: "";
+	$username 				= isset($_REQUEST['username']) 		? $_REQUEST['username'] 			: "";
+	$password 				= isset($_REQUEST['password']) 		? $_REQUEST['password'] 			: "";
 
-
+	$code 					= isset($_REQUEST['code']) 			? $_REQUEST['code'] 				: "";
 	
 	if(!empty($direction) && $direction == "activate"){
 
