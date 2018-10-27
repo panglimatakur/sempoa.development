@@ -13,7 +13,7 @@
 
 	$code 					= isset($_REQUEST['code']) 			? $_REQUEST['code'] 				: "";
 	
-	if(!empty($direction) && $direction == "activate"){
+	//if(!empty($direction) && $direction == "activate"){
 
 		/*$q_activate 	= $db->query("SELECT ACTIVATION_CODE_ID FROM system_activation_code WHERE ACTIVATION_CODE = '".trim($code)."' AND STATUS = '0' ");
 		@$ch_active 	= $db->numRows($q_activate);
@@ -37,6 +37,6 @@
 			$result['io'] = 2;
 		}*/
 		echo $callback.'('.json_encode($result).')';
-	}
+	//}
 
 ?>
