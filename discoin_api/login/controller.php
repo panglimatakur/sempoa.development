@@ -15,9 +15,9 @@
 	
 	if(!empty($direction) && $direction == "activate"){
 
-		$q_activate 	= $db->query("SELECT ACTIVATION_CODE_ID FROM system_activation_code WHERE ACTIVATION_CODE = '".trim($code)."' AND STATUS = '0' ");
+		/*$q_activate 	= $db->query("SELECT ACTIVATION_CODE_ID FROM system_activation_code WHERE ACTIVATION_CODE = '".trim($code)."' AND STATUS = '0' ");
 		@$ch_active 	= $db->numRows($q_activate);
-		$dt_activate 	= $db->fetchNextObject($q_activate);
+		$dt_activate 	= $db->fetchNextObject($q_activate);*/
 		$result['msg'] = "Maaf, Kode Registrasi ini tidak berlaku atau sudah berakhir, silahkan hubungin vendor aplikasi Sempoa untuk aktifasi";
 		/*$done = 0;
 		if($ch_active == 0){
