@@ -3,7 +3,7 @@ error_reporting(E_ERROR|E_WARNING);
 date_default_timezone_set('Asia/Jakarta');
 defined('mainload') or die('Restricted Access');
 
-	$conf = 1;
+	$conf = 2;
 	if($conf == 1){
 		$db_host 		= 'localhost';
 		$db_user 		= 'root';
