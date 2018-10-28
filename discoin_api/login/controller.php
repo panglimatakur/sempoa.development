@@ -60,25 +60,29 @@
 	
 	if(!empty($direction) && $direction == "activate"){
 
-		$q_activate 	= $db->query("SELECT ACTIVATION_CODE_ID FROM system_activation_code WHERE ACTIVATION_CODE = '".trim($code)."' AND STATUS = '0' ");
+		$q_activate 	= $db->query("SELECT ACTIVATION_CODE_ID FROM system_activation_code WHERE ACTIVATION_CODE = '".trim($code)."'");
 		@$ch_active 	= $db->numRows($q_activate);
 		$dt_activate 	= $db->fetchNextObject($q_activate);
 
-		if($ch_active == 0){
+		if($ch_active > 0){
+			if($dt_activate->STATUS == 0){
+				@$expired_date 	= $dtime->tomorrow(365,date('d'),date('m'),date('Y'));
+				$content 		= array(1=>
+					array("ACTIVATION_STATUS","1"),
+					//array("MAC_ADDRESS",$mac_address),
+					//array("ACTIVATION_EXPIRED_DATE",@$expired_date),
+					array("ACTIVATION_DATE",$tglupdate." ".$wktupdate));
+				$db->update("system_activation_code",$content," WHERE ACTIVATION_CODE_ID='".$dt_activate->ACTIVATION_CODE_ID."'");
+				$result['msg'] 		= "Kode Registrasi anda diterima, Terimakasih sudah menggunakan aplikasi Sempoa ";
+				$result['io'] 		= 1; 
 			
-			@$expired_date 	= $dtime->tomorrow(365,date('d'),date('m'),date('Y'));
-			$content 		= array(1=>
-				array("ACTIVATION_STATUS","1"),
-				//array("MAC_ADDRESS",$mac_address),
-				//array("ACTIVATION_EXPIRED_DATE",@$expired_date),
-				array("ACTIVATION_DATE",$tglupdate." ".$wktupdate));
-			$db->update("system_activation_code",$content," WHERE APPLICATION_ID = '".$apps_id."' AND ACTIVATION_CODE='".$code."'");
-			$result['msg'] 		= "Kode Registrasi anda diterima, Terimakasih sudah menggunakan aplikasi Sempoa ";
-			$result['io'] 		= 1; 
-			
+			}else{
+				$result['msg'] = "Maaf, Kode Registrasi sudah digunakan oleh perangkat sebelumnya, silahkan hubungin vendor aplikasi Sempoa untuk aktifasi";
+				$result['io'] = 2;
+			}
 		}else{
-			$result['msg'] = "Maaf, Kode Registrasi ini tidak berlaku atau sudah berakhir, silahkan hubungin vendor aplikasi Sempoa untuk aktifasi";
-			$result['io'] = 2;
+				$result['msg'] = "Maaf, Kode Registrasi ini tidak tidak ditemukan, silahkan hubungin vendor aplikasi Sempoa untuk aktifasi";
+				$result['io'] = 2;
 		}
 		echo $callback.'('.json_encode($result).')';
 	}
