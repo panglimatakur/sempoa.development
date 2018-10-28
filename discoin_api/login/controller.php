@@ -10,7 +10,7 @@
 	$direction 				= isset($_REQUEST['direction']) 	? $_REQUEST['direction'] 			: "";
 	$username 				= isset($_REQUEST['username']) 		? $_REQUEST['username'] 			: "";
 	$password 				= isset($_REQUEST['password']) 		? $_REQUEST['password'] 			: "";
-	$code 					= isset($_REQUEST['code']) 			? $_REQUEST['code'] 				: "";
+	$code 					= isset($_REQUEST['code']) 			? strtoupper($_REQUEST['code']) 	: "";
 	
 	if(!empty($direction) && $direction=="logout"){
 		session_destroy();
