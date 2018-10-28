@@ -81,8 +81,8 @@
 				$result['io'] = 2;
 			}
 		}else{
-				$result['msg'] = "Maaf, Kode Registrasi ini tidak tidak ditemukan, silahkan hubungin vendor aplikasi Sempoa untuk aktifasi";
-				$result['io'] = 2;
+			$result['msg'] = "Maaf, Kode ".$code." Registrasi ini tidak tidak ditemukan, silahkan hubungin vendor aplikasi Sempoa untuk aktifasi";
+			$result['io'] = 2;
 		}
 		echo $callback.'('.json_encode($result).')';
 	}
