@@ -65,7 +65,7 @@
 		$dt_activate 	= $db->fetchNextObject($q_activate);
 
 		if($ch_active > 0){
-			if($dt_activate->ACTIVATION_STATUS == 0){
+			if($dt_activate->ACTIVATION_STATUS != 1){
 				@$expired_date 	= $dtime->tomorrow(365,date('d'),date('m'),date('Y'));
 				$content 		= array(1=>
 					array("ACTIVATION_STATUS","1"),
