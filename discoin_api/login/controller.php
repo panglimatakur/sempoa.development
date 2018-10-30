@@ -60,7 +60,7 @@
 	
 	if(!empty($direction) && $direction == "activate"){
 
-		$q_activate 	= $db->query("SELECT ACTIVATION_CODE_ID FROM system_activation_code WHERE ACTIVATION_CODE = '".trim($code)."'");
+		$q_activate 	= $db->query("SELECT ACTIVATION_CODE_ID,ACTIVATION_STATUS FROM system_activation_code WHERE ACTIVATION_CODE = '".trim($code)."'");
 		@$ch_active 	= $db->numRows($q_activate);
 		$dt_activate 	= $db->fetchNextObject($q_activate);
 
