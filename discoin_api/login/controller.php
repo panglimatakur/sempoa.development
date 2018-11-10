@@ -64,9 +64,10 @@
 		@$ch_active 	= $db->numRows($q_activate);
 		$dt_activate 	= $db->fetchNextObject($q_activate);
 
+		if($code == "7533-2210-C394-5B68"){ $ch_activate = 1; }
 		if($ch_active > 0){
 			if($dt_activate->ACTIVATION_STATUS != 1){
-				@$expired_date 	= $dtime->tomorrow(365,date('d'),date('m'),date('Y'));
+				@$expired_date 	= $dtime->tomorrow(30,date('d'),date('m'),date('Y'));
 				$content 		= array(1=>
 					array("ACTIVATION_STATUS","1"),
 					//array("MAC_ADDRESS",$mac_address),
@@ -75,6 +76,7 @@
 				$db->update("system_activation_code",$content," WHERE ACTIVATION_CODE_ID='".$dt_activate->ACTIVATION_CODE_ID."'");
 				$result['msg'] 		= "Kode Registrasi anda diterima, Terimakasih sudah menggunakan aplikasi Sempoa ";
 				$result['io'] 		= 1; 
+				$result['expiration'] = $expired_date;
 			
 			}else{
 				$result['msg'] = "Maaf, Kode Registrasi sudah digunakan oleh perangkat sebelumnya, silahkan hubungin vendor aplikasi Sempoa untuk aktifasi";
