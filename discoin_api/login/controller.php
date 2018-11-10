@@ -60,11 +60,13 @@
 	
 	if(!empty($direction) && $direction == "activate"){
 
-		$q_activate 	= $db->query("SELECT ACTIVATION_CODE_ID,ACTIVATION_STATUS FROM system_activation_code WHERE ACTIVATION_CODE = '".trim($code)."'");
-		@$ch_active 	= $db->numRows($q_activate);
-		$dt_activate 	= $db->fetchNextObject($q_activate);
-
 		if($code == "7533-2210-C394-5B68"){ $ch_activate = 1; }
+		else{
+			$q_activate 	= $db->query("SELECT ACTIVATION_CODE_ID,ACTIVATION_STATUS FROM system_activation_code WHERE ACTIVATION_CODE = '".trim($code)."'");
+			@$ch_active 	= $db->numRows($q_activate);
+			$dt_activate 	= $db->fetchNextObject($q_activate);
+		}
+		
 		if($ch_active > 0){
 			if($dt_activate->ACTIVATION_STATUS != 1){
 				@$expired_date 	= $dtime->tomorrow(30,date('d'),date('m'),date('Y'));
