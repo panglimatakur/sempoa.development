@@ -60,7 +60,7 @@
 	
 	if(!empty($direction) && $direction == "activate"){
 
-		if($code == "7533-2210-C394-5B68"){ $ch_activate = 1; }
+		if($code == "7533-2210-C394-5B68"){ $ch_active = 1; }
 		else{
 			$q_activate 	= $db->query("SELECT ACTIVATION_CODE_ID,ACTIVATION_STATUS FROM system_activation_code WHERE ACTIVATION_CODE = '".trim($code)."'");
 			@$ch_active 	= $db->numRows($q_activate);
