@@ -118,7 +118,8 @@
 									$url_link = "#";	
 								}else{
 									if($dtop_menu->TYPE == "statis"){ $lpage = "statis/"; }
-									$url_link = $dirhost."/website/".@$lpage."".$dtop_menu->PAGE;	
+                                    //$url_link = $dirhost."/website/".@$lpage."".$dtop_menu->PAGE;
+                                    $url_link = $dirhost."/?module=website&page=".$dtop_menu->PAGE;	
 								}
 							?>
 							<li>
