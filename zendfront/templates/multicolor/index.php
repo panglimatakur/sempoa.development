@@ -144,7 +144,7 @@
 								$q_comm = $db->query("SELECT a.NAME,a.ID_COMMUNITY FROM ".$tpref."communities a,".$tpref."communities_merchants b WHERE a.ID_COMMUNITY = b.ID_COMMUNITY GROUP BY b.ID_COMMUNITY");
 								while($dt_comm = $db->fetchNextObject($q_comm)){?>
 										<li>
-											<a href="<?php echo $dirhost; ?>/website/komunitas/<?php echo $dt_comm->ID_COMMUNITY; ?>" >
+											<a href="<?php echo $dirhost; ?>/?module=website&page=komunitas&paramaters=<?php echo $dt_comm->ID_COMMUNITY; ?>" >
 												<?php echo $dt_comm->NAME; ?>
 											</a>
 										</li>
@@ -152,11 +152,11 @@
 							</ul>
 					   </li>
                        <li>
-                       	<a href="<?php echo $dirhost; ?>/website/mendaftar" 
+                       	<a href="<?php echo $dirhost; ?>/module=website&page=mendaftar" 
                         	title="Mendaftar Komunitas Online Sempoa">Mendaftar</a>
                         </li>
                        <li>
-                       		<a href="<?php echo $dirhost; ?>/website/login">Login Merchant</a>
+                       		<a href="<?php echo $dirhost; ?>/?module=website&page=login">Login Merchant</a>
                        </li>
                     </ul>
                 </div>
