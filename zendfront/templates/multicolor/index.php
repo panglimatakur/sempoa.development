@@ -55,7 +55,8 @@
                     $url_link = "#";	
                 }else{
                     if($dtmenu->TYPE == "statis"){ $lpage = "statis/"; }
-                    $url_link = $dirhost."/website/".@$lpage."".$dtmenu->PAGE;	
+                    //$url_link = $dirhost."/website/".@$lpage."".$dtmenu->PAGE;
+                    $url_link = $dirhost."/?module=website&page=".$dtmenu->PAGE;	
                 }
             ?>
                 <li>
